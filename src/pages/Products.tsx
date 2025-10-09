@@ -10,7 +10,7 @@ export const Products = () => {
       {/* Overview */}
       <section id="overview" className="py-20 gradient-hero">
         <div className="container mx-auto px-4 lg:px-8 text-center">
-          <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">
+          <h1 className="text-5xl md:text-6xl font-light mb-6 animate-fade-in-up">
             Diagnostic Solutions
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
@@ -27,7 +27,7 @@ export const Products = () => {
             <div className="inline-block px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold mb-4">
               Vaccine Testing
             </div>
-            <h2 className="text-4xl font-bold mb-6">Vaccine Integrity Testing</h2>
+            <h2 className="text-4xl font-light mb-6">Vaccine Integrity Testing</h2>
             <p className="text-lg text-muted-foreground mb-6">
               Ensure vaccine quality and potency throughout the supply chain with our advanced molecular testing platform. 
               Detect degradation, contamination, and storage issues before distribution.
@@ -72,7 +72,7 @@ export const Products = () => {
               <div className="inline-block px-4 py-2 rounded-full bg-secondary/10 text-secondary text-sm font-semibold mb-4">
                 Infection Testing
               </div>
-              <h2 className="text-4xl font-bold mb-6">Rapid Infection Detection</h2>
+              <h2 className="text-4xl font-light mb-6">Rapid Infection Detection</h2>
               <p className="text-lg text-muted-foreground mb-6">
                 Point-of-care testing that delivers laboratory-quality results at the patient's bedside. 
                 Identify infections quickly to enable faster treatment decisions and better outcomes.
@@ -107,7 +107,7 @@ export const Products = () => {
             <div className="inline-block px-4 py-2 rounded-full bg-accent/10 text-accent text-sm font-semibold mb-4">
               Pathogen Analysis
             </div>
-            <h2 className="text-4xl font-bold mb-6">Comprehensive Pathogen Testing</h2>
+            <h2 className="text-4xl font-light mb-6">Comprehensive Pathogen Testing</h2>
             <p className="text-lg text-muted-foreground mb-6">
               Advanced molecular diagnostics for rapid identification of bacteria, viruses, and fungi. 
               Perfect for outbreak investigation, antimicrobial stewardship, and infection control.
@@ -143,7 +143,7 @@ export const Products = () => {
       <section id="how-it-works" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">How It Works</h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-4">How It Works</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Our streamlined process makes advanced diagnostics accessible to everyone
             </p>
@@ -185,7 +185,7 @@ export const Products = () => {
       {/* Benefits */}
       <section id="benefits" className="py-20 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Choose Epidote Healthcare?</h2>
+          <h2 className="text-4xl md:text-5xl font-light mb-4">Why Choose Epidote Healthcare?</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             The advantages that set our solutions apart
           </p>

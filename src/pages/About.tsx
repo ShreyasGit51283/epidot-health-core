@@ -8,7 +8,7 @@ export const About = () => {
       <section id="our-story" className="py-20 gradient-hero">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-bold mb-6 animate-fade-in-up">Our Story</h1>
+            <h1 className="text-5xl md:text-6xl font-light mb-6 animate-fade-in-up">Our Story</h1>
             <p className="text-xl text-muted-foreground">
               From research beginnings to diagnostic innovation
             </p>
@@ -40,7 +40,7 @@ export const About = () => {
       <section id="mission-values" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Mission & Values</h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-4">Mission & Values</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               The principles that guide everything we do
             </p>
@@ -83,7 +83,7 @@ export const About = () => {
       {/* Team */}
       <section id="team" className="py-20 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Team</h2>
+          <h2 className="text-4xl md:text-5xl font-light mb-4">Our Team</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             Led by experts in molecular biology, diagnostics, and healthcare innovation
           </p>
@@ -129,7 +129,7 @@ export const About = () => {
       <section id="milestones" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Journey</h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-4">Our Journey</h2>
             <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
               Key milestones in our growth
             </p>
@@ -202,7 +202,7 @@ export const About = () => {
       {/* Press & Partners - Optional */}
       <section id="press-partners" className="py-20 container mx-auto px-4 lg:px-8">
         <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Recognition</h2>
+          <h2 className="text-4xl md:text-5xl font-light mb-4">Recognition</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
             Our work has been recognized by leading healthcare and technology organizations
           </p>
