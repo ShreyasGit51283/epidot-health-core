@@ -110,16 +110,6 @@ export const About = () => {
             </div>
           </Card>
 
-          <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all">
-            <div className="aspect-square bg-gradient-to-br from-accent to-primary"></div>
-            <div className="p-6">
-              <h3 className="text-xl font-semibold mb-1">Dr. Amara Okafor</h3>
-              <p className="text-sm text-accent mb-3">Chief Scientific Officer</p>
-              <p className="text-sm text-muted-foreground">
-                Leading expert in infectious disease diagnostics and public health
-              </p>
-            </div>
-          </Card>
         </div>
       </section>
 
