@@ -87,7 +87,7 @@ export const About = () => {
           </p>
         </div>
 
-        <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
+        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
           <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all">
             <div className="aspect-square bg-gradient-to-br from-primary to-secondary"></div>
             <div className="p-6">
