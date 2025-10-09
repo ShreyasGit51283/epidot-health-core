@@ -2,6 +2,7 @@ import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Menu, X } from "lucide-react";
 import { Button } from "@/components/ui/button";
+import epidoteLogo from "@/assets/epidote-logo.png";
 
 interface HeaderProps {
   onContactClick: () => void;
@@ -18,13 +19,12 @@ export const Header = ({ onContactClick }: HeaderProps) => {
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
-          <Link to="/" className="flex items-center space-x-2 group">
-            <div className="w-10 h-10 rounded-xl gradient-primary flex items-center justify-center shadow-soft transition-transform group-hover:scale-105">
-              <span className="text-white font-bold text-xl">E</span>
-            </div>
-            <span className="text-xl font-semibold bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent">
-              Epidot Health
-            </span>
+          <Link to="/" className="flex items-center space-x-3 group">
+            <img 
+              src={epidoteLogo} 
+              alt="Epidote Healthcare" 
+              className="h-12 w-auto transition-transform group-hover:scale-105"
+            />
           </Link>
 
           {/* Desktop Navigation */}

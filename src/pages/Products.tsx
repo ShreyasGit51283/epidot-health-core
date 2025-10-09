@@ -185,7 +185,7 @@ export const Products = () => {
       {/* Benefits */}
       <section id="benefits" className="py-20 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Choose Epidot Health?</h2>
+          <h2 className="text-4xl md:text-5xl font-bold mb-4">Why Choose Epidote Healthcare?</h2>
           <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
             The advantages that set our solutions apart
           </p>

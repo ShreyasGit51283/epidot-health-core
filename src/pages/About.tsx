@@ -20,7 +20,7 @@ export const About = () => {
         <div className="max-w-3xl mx-auto">
           <div className="prose prose-lg max-w-none">
             <p className="text-lg text-muted-foreground mb-6">
-              Founded in 2019, Epidot Health began with a vision to revolutionize healthcare through innovative diagnostic solutions. 
+              Founded in 2019, Epidote Healthcare began with a vision to revolutionize healthcare through innovative diagnostic solutions. 
               Our journey started in a small research lab, exploring novel approaches to molecular testing.
             </p>
             <p className="text-lg text-muted-foreground mb-6">
@@ -29,7 +29,7 @@ export const About = () => {
               our proprietary testing platform.
             </p>
             <p className="text-lg text-muted-foreground">
-              Today, Epidot Health stands at the forefront of diagnostic innovation, serving healthcare providers worldwide with 
+              Today, Epidote Healthcare stands at the forefront of diagnostic innovation, serving healthcare providers worldwide with 
               solutions that make a real difference in patient care.
             </p>
           </div>
@@ -146,7 +146,7 @@ export const About = () => {
                 <div className="text-sm font-semibold text-primary mb-1">2019</div>
                 <h3 className="text-xl font-semibold mb-2">Company Founded</h3>
                 <p className="text-muted-foreground">
-                  Epidot Health established with a focus on novel molecular testing approaches
+                  Epidote Healthcare established with a focus on novel molecular testing approaches
                 </p>
               </div>
             </div>

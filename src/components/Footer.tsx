@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import epidoteLogo from "@/assets/epidote-logo.png";
 
 export const Footer = () => {
   return (
@@ -6,11 +7,8 @@ export const Footer = () => {
       <div className="container mx-auto px-4 lg:px-8 py-12">
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Brand */}
-          <div className="flex items-center space-x-2">
-            <div className="w-8 h-8 rounded-lg gradient-primary flex items-center justify-center">
-              <span className="text-white font-bold">E</span>
-            </div>
-            <span className="font-semibold">Epidot Health</span>
+          <div className="flex items-center">
+            <img src={epidoteLogo} alt="Epidote Healthcare" className="h-8 w-auto" />
           </div>
 
           {/* Quick Links */}
@@ -28,7 +26,7 @@ export const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © {new Date().getFullYear()} Epidot Health. All rights reserved.
+            © {new Date().getFullYear()} Epidote Healthcare. All rights reserved.
           </p>
         </div>
       </div>
