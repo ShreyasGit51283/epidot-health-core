@@ -22,7 +22,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
         
         <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center">
           <div className="max-w-4xl mx-auto animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
+            <h1 className="text-5xl md:text-7xl font-light mb-6 bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               Revolutionary Diagnostic Solutions
             </h1>
             <p className="text-xl md:text-2xl text-muted-foreground mb-8 max-w-2xl mx-auto">
@@ -50,82 +50,92 @@ export const Home = ({ onContactClick }: HomeProps) => {
 
       {/* Products Overview */}
       <section id="products" className="py-20 container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-16 animate-fade-in-up">
-          <h2 className="text-4xl md:text-5xl font-bold mb-4">Our Solutions</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Advanced diagnostic technology designed for the modern healthcare landscape
-          </p>
-        </div>
+        <div className="grid lg:grid-cols-2 gap-12 items-start">
+          {/* Left Column - Text */}
+          <div className="animate-fade-in-up">
+            <h2 className="text-4xl md:text-5xl font-light mb-6">Our Solutions</h2>
+            <p className="text-xl text-muted-foreground">
+              Advanced diagnostic technology designed for the modern healthcare landscape
+            </p>
+          </div>
 
-        <div className="grid md:grid-cols-3 gap-8">
-          {/* Vaccine Integrity */}
-          <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all group">
-            <div className="aspect-video overflow-hidden">
-              <img 
-                src={vaccineImage} 
-                alt="Vaccine Integrity Testing" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold mb-3">Vaccine Integrity Testing</h3>
-              <p className="text-muted-foreground mb-4">
-                Ensure vaccine quality and potency with our advanced molecular testing platform.
-              </p>
-              <Link to="/products#vaccine">
-                <Button variant="ghost" className="group/btn">
-                  Learn More
-                  <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
-                </Button>
-              </Link>
-            </div>
-          </Card>
+          {/* Right Column - Cards */}
+          <div className="space-y-6">
+            {/* Vaccine Integrity */}
+            <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all group">
+              <div className="grid md:grid-cols-2">
+                <div className="aspect-video md:aspect-auto overflow-hidden">
+                  <img 
+                    src={vaccineImage} 
+                    alt="Vaccine Integrity Testing" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold mb-3">Vaccine Integrity Testing</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Ensure vaccine quality and potency with our advanced molecular testing platform.
+                  </p>
+                  <Link to="/products#vaccine">
+                    <Button variant="ghost" className="group/btn">
+                      Learn More
+                      <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </Card>
 
-          {/* Infection Detection */}
-          <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all group">
-            <div className="aspect-video overflow-hidden">
-              <img 
-                src={infectionImage} 
-                alt="Infection Detection" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold mb-3">Infection Detection</h3>
-              <p className="text-muted-foreground mb-4">
-                Rapid and accurate detection of infections at the point of care.
-              </p>
-              <Link to="/products#infection">
-                <Button variant="ghost" className="group/btn">
-                  Learn More
-                  <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
-                </Button>
-              </Link>
-            </div>
-          </Card>
+            {/* Infection Detection */}
+            <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all group">
+              <div className="grid md:grid-cols-2">
+                <div className="aspect-video md:aspect-auto overflow-hidden">
+                  <img 
+                    src={infectionImage} 
+                    alt="Infection Detection" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold mb-3">Infection Detection</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Rapid and accurate detection of infections at the point of care.
+                  </p>
+                  <Link to="/products#infection">
+                    <Button variant="ghost" className="group/btn">
+                      Learn More
+                      <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </Card>
 
-          {/* Pathogen Testing */}
-          <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all group">
-            <div className="aspect-video overflow-hidden">
-              <img 
-                src={pathogenImage} 
-                alt="Pathogen Testing" 
-                className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
-              />
-            </div>
-            <div className="p-6">
-              <h3 className="text-2xl font-semibold mb-3">Pathogen Testing</h3>
-              <p className="text-muted-foreground mb-4">
-                Comprehensive pathogen identification with unprecedented speed.
-              </p>
-              <Link to="/products#pathogen">
-                <Button variant="ghost" className="group/btn">
-                  Learn More
-                  <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
-                </Button>
-              </Link>
-            </div>
-          </Card>
+            {/* Pathogen Testing */}
+            <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all group">
+              <div className="grid md:grid-cols-2">
+                <div className="aspect-video md:aspect-auto overflow-hidden">
+                  <img 
+                    src={pathogenImage} 
+                    alt="Pathogen Testing" 
+                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+                <div className="p-6">
+                  <h3 className="text-2xl font-semibold mb-3">Pathogen Testing</h3>
+                  <p className="text-muted-foreground mb-4">
+                    Comprehensive pathogen identification with unprecedented speed.
+                  </p>
+                  <Link to="/products#pathogen">
+                    <Button variant="ghost" className="group/btn">
+                      Learn More
+                      <ArrowRight className="ml-2 group-hover/btn:translate-x-1 transition-transform" size={16} />
+                    </Button>
+                  </Link>
+                </div>
+              </div>
+            </Card>
+          </div>
         </div>
       </section>
 
