@@ -1,9 +1,7 @@
 import { Lightbulb, Heart, Zap, Calendar } from "lucide-react";
 import { Card } from "@/components/ui/card";
-
 export const About = () => {
-  return (
-    <div className="min-h-screen pt-20">
+  return <div className="min-h-screen pt-20">
       {/* Our Story */}
       <section id="our-story" className="py-20 gradient-hero">
         <div className="container mx-auto px-4 lg:px-8">
@@ -93,7 +91,7 @@ export const About = () => {
           <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all">
             <div className="aspect-square bg-gradient-to-br from-primary to-secondary"></div>
             <div className="p-6">
-              <h3 className="text-xl font-semibold mb-1">Dr. Sarah Chen</h3>
+              <h3 className="text-xl font-semibold mb-1">Dr. Sanjeev Galande</h3>
               <p className="text-sm text-primary mb-3">Co-Founder & CEO</p>
               <p className="text-sm text-muted-foreground">
                 Former research director with 15+ years in molecular diagnostics
@@ -222,6 +220,5 @@ export const About = () => {
           </div>
         </div>
       </section>
-    </div>
-  );
+    </div>;
 };
