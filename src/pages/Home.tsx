@@ -1,4 +1,4 @@
-import { ArrowRight, Zap, Target, DollarSign, ChevronDown } from "lucide-react";
+import { ArrowRight, Zap, Target, DollarSign } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import { Link } from "react-router-dom";
@@ -12,13 +12,6 @@ interface HomeProps {
 }
 
 export const Home = ({ onContactClick }: HomeProps) => {
-  const scrollToSection = (id: string) => {
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: "smooth" });
-    }
-  };
-
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
@@ -52,14 +45,6 @@ export const Home = ({ onContactClick }: HomeProps) => {
               </Button>
             </div>
           </div>
-
-          <button
-            onClick={() => scrollToSection('products')}
-            className="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce"
-            aria-label="Scroll to products"
-          >
-            <ChevronDown size={32} className="text-primary" />
-          </button>
         </div>
       </section>
 
