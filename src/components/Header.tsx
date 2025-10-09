@@ -23,7 +23,7 @@ export const Header = ({ onContactClick }: HeaderProps) => {
             <img 
               src={epidoteLogo} 
               alt="Epidote Healthcare" 
-              className="h-12 w-auto transition-transform group-hover:scale-105"
+              className="w-[150px] h-auto transition-transform group-hover:scale-105"
             />
           </Link>
 

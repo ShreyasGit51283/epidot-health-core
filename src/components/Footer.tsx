@@ -8,7 +8,7 @@ export const Footer = () => {
         <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Brand */}
           <div className="flex items-center">
-            <img src={epidoteLogo} alt="Epidote Healthcare" className="h-8 w-auto" />
+            <img src={epidoteLogo} alt="Epidote Healthcare" className="w-[150px] h-auto" />
           </div>
 
           {/* Quick Links */}
