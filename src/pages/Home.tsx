@@ -50,20 +50,21 @@ export const Home = ({ onContactClick }: HomeProps) => {
 
       {/* Products Overview */}
       <section id="products" className="py-20 container mx-auto px-4 lg:px-8">
-        <div className="grid lg:grid-cols-2 gap-16 items-center">
-          {/* Left Column - Text */}
-          <div className="animate-fade-in-up">
-            <h2 className="text-4xl md:text-5xl font-light mb-6">Our Solutions</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed">
-              Advanced diagnostic technology designed for the modern healthcare landscape. 
-              Our comprehensive suite includes vaccine integrity testing to ensure quality and potency, 
-              rapid infection detection at the point of care, and comprehensive pathogen identification 
-              with unprecedented speed and accuracy.
-            </p>
-          </div>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-light mb-6">Our Solutions</h2>
+        </div>
 
-          {/* Right Column - Images Only */}
-          <div className="space-y-6">
+        <div className="space-y-20">
+          {/* Vaccine Integrity Testing */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in-up">
+              <h3 className="text-3xl font-semibold mb-4">Vaccine Integrity Testing</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Ensure vaccine quality and potency with our advanced molecular testing platform. 
+                Our technology provides rapid, accurate results to maintain the highest standards 
+                in vaccine storage and distribution.
+              </p>
+            </div>
             <div className="overflow-hidden rounded-2xl shadow-soft">
               <img 
                 src={vaccineImage} 
@@ -71,12 +72,36 @@ export const Home = ({ onContactClick }: HomeProps) => {
                 className="w-full h-auto object-cover"
               />
             </div>
+          </div>
+
+          {/* Infection Detection */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in-up">
+              <h3 className="text-3xl font-semibold mb-4">Infection Detection</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Rapid and accurate detection of infections at the point of care. 
+                Our diagnostic solutions deliver results in minutes, enabling faster treatment 
+                decisions and better patient outcomes.
+              </p>
+            </div>
             <div className="overflow-hidden rounded-2xl shadow-soft">
               <img 
                 src={infectionImage} 
                 alt="Infection Detection" 
                 className="w-full h-auto object-cover"
               />
+            </div>
+          </div>
+
+          {/* Pathogen Testing */}
+          <div className="grid lg:grid-cols-2 gap-12 items-center">
+            <div className="animate-fade-in-up">
+              <h3 className="text-3xl font-semibold mb-4">Pathogen Testing</h3>
+              <p className="text-lg text-muted-foreground leading-relaxed">
+                Comprehensive pathogen identification with unprecedented speed and accuracy. 
+                Our advanced testing platform identifies a wide range of pathogens, helping 
+                healthcare providers make informed treatment decisions quickly.
+              </p>
             </div>
             <div className="overflow-hidden rounded-2xl shadow-soft">
               <img 
@@ -93,7 +118,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
       <section id="about" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-bold mb-6">Transforming Diagnostics</h2>
+            <h2 className="text-4xl md:text-5xl font-light mb-6">Transforming Diagnostics</h2>
             <p className="text-xl text-muted-foreground mb-8">
               Founded in 2019, Epidote Healthcare pivoted from initial research to focus on revolutionary diagnostic solutions. 
               Our mission is to make advanced testing accessible, affordable, and rapid.
@@ -129,7 +154,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
       {/* Contact Section */}
       <section id="contact" className="py-20 container mx-auto px-4 lg:px-8">
         <div className="max-w-2xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold mb-6">Ready to Get Started?</h2>
+          <h2 className="text-4xl md:text-5xl font-light mb-6">Ready to Get Started?</h2>
           <p className="text-xl text-muted-foreground mb-8">
             Contact us to learn more about our diagnostic solutions and how we can help transform your healthcare operations.
           </p>
