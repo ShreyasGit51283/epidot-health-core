@@ -154,28 +154,28 @@ export const Products = () => {
               <div className="w-16 h-16 rounded-full gradient-primary mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold shadow-medium">
                 1
               </div>
-              <h4 className="text-xl font-semibold mb-2">Collect Sample</h4>
+              <h4 className="text-lg font-medium mb-2">Collect Sample</h4>
               <p className="text-muted-foreground">Simple, non-invasive sample collection</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 rounded-full gradient-primary mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold shadow-medium">
                 2
               </div>
-              <h4 className="text-xl font-semibold mb-2">Process Test</h4>
+              <h4 className="text-lg font-medium mb-2">Process Test</h4>
               <p className="text-muted-foreground">Automated analysis with our platform</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 rounded-full gradient-primary mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold shadow-medium">
                 3
               </div>
-              <h4 className="text-xl font-semibold mb-2">Get Results</h4>
+              <h4 className="text-lg font-medium mb-2">Get Results</h4>
               <p className="text-muted-foreground">Receive accurate results in minutes</p>
             </div>
             <div className="text-center">
               <div className="w-16 h-16 rounded-full gradient-primary mx-auto mb-4 flex items-center justify-center text-white text-2xl font-bold shadow-medium">
                 4
               </div>
-              <h4 className="text-xl font-semibold mb-2">Take Action</h4>
+              <h4 className="text-lg font-medium mb-2">Take Action</h4>
               <p className="text-muted-foreground">Make informed treatment decisions</p>
             </div>
           </div>
@@ -194,7 +194,7 @@ export const Products = () => {
         <div className="grid md:grid-cols-3 gap-8">
           <Card className="p-8 shadow-soft hover:shadow-medium transition-all">
             <Clock className="w-12 h-12 mb-4 text-primary" />
-            <h4 className="text-2xl font-semibold mb-3">Unmatched Speed</h4>
+            <h4 className="text-xl font-medium mb-3">Unmatched Speed</h4>
             <p className="text-muted-foreground">
               Get results in minutes instead of hours or days. Our rapid testing enables faster clinical decisions and better patient outcomes.
             </p>
@@ -202,7 +202,7 @@ export const Products = () => {
 
           <Card className="p-8 shadow-soft hover:shadow-medium transition-all">
             <Shield className="w-12 h-12 mb-4 text-secondary" />
-            <h4 className="text-2xl font-semibold mb-3">Superior Accuracy</h4>
+            <h4 className="text-xl font-medium mb-3">Superior Accuracy</h4>
             <p className="text-muted-foreground">
               Clinical-grade precision you can rely on. Our technology delivers laboratory-quality results at the point of care.
             </p>
@@ -210,7 +210,7 @@ export const Products = () => {
 
           <Card className="p-8 shadow-soft hover:shadow-medium transition-all">
             <TrendingDown className="w-12 h-12 mb-4 text-accent" />
-            <h4 className="text-2xl font-semibold mb-3">Lower Costs</h4>
+            <h4 className="text-xl font-medium mb-3">Lower Costs</h4>
             <p className="text-muted-foreground">
               Reduce operational expenses while improving care quality. Our solutions are designed for efficiency and affordability.
             </p>

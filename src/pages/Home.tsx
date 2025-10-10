@@ -58,7 +58,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
           {/* Vaccine Integrity Testing */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
-              <h4 className="text-3xl font-semibold mb-4">Vaccine Integrity Testing</h4>
+              <h4 className="text-2xl font-medium mb-4">Vaccine Integrity Testing</h4>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Ensure vaccine quality and potency with our advanced molecular testing platform. 
                 Our technology provides rapid, accurate results to maintain the highest standards 
@@ -77,7 +77,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
           {/* Infection Detection */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
-              <h4 className="text-3xl font-semibold mb-4">Infection Detection</h4>
+              <h4 className="text-2xl font-medium mb-4">Infection Detection</h4>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Rapid and accurate detection of infections at the point of care. 
                 Our diagnostic solutions deliver results in minutes, enabling faster treatment 
@@ -96,7 +96,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
           {/* Pathogen Testing */}
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="animate-fade-in-up">
-              <h4 className="text-3xl font-semibold mb-4">Pathogen Testing</h4>
+              <h4 className="text-2xl font-medium mb-4">Pathogen Testing</h4>
               <p className="text-lg text-muted-foreground leading-relaxed">
                 Comprehensive pathogen identification with unprecedented speed and accuracy. 
                 Our advanced testing platform identifies a wide range of pathogens, helping 
@@ -134,17 +134,17 @@ export const Home = ({ onContactClick }: HomeProps) => {
           <div className="grid md:grid-cols-3 gap-8 mt-16">
             <div className="text-center p-6 rounded-2xl bg-card shadow-soft">
               <Zap className="w-12 h-12 mx-auto mb-4 text-primary" />
-              <h4 className="text-2xl font-semibold mb-2">Speed</h4>
+              <h4 className="text-xl font-medium mb-2">Speed</h4>
               <p className="text-muted-foreground">Results in minutes, not hours</p>
             </div>
             <div className="text-center p-6 rounded-2xl bg-card shadow-soft">
               <Target className="w-12 h-12 mx-auto mb-4 text-secondary" />
-              <h4 className="text-2xl font-semibold mb-2">Accuracy</h4>
+              <h4 className="text-xl font-medium mb-2">Accuracy</h4>
               <p className="text-muted-foreground">Precision you can trust</p>
             </div>
             <div className="text-center p-6 rounded-2xl bg-card shadow-soft">
               <DollarSign className="w-12 h-12 mx-auto mb-4 text-accent" />
-              <h4 className="text-2xl font-semibold mb-2">Cost-Effective</h4>
+              <h4 className="text-xl font-medium mb-2">Cost-Effective</h4>
               <p className="text-muted-foreground">Affordable healthcare solutions</p>
             </div>
           </div>

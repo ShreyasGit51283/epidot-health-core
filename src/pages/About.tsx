@@ -49,7 +49,7 @@ export const About = () => {
               <div className="w-16 h-16 rounded-full gradient-primary mx-auto mb-4 flex items-center justify-center">
                 <Lightbulb className="text-white" size={32} />
               </div>
-              <h4 className="text-2xl font-semibold mb-3">Innovation</h4>
+              <h4 className="text-xl font-medium mb-3">Innovation</h4>
               <p className="text-muted-foreground">
                 Continuously pushing the boundaries of what's possible in diagnostic technology
               </p>
@@ -59,7 +59,7 @@ export const About = () => {
               <div className="w-16 h-16 rounded-full gradient-primary mx-auto mb-4 flex items-center justify-center">
                 <Heart className="text-white" size={32} />
               </div>
-              <h4 className="text-2xl font-semibold mb-3">Integrity</h4>
+              <h4 className="text-xl font-medium mb-3">Integrity</h4>
               <p className="text-muted-foreground">
                 Maintaining the highest standards of quality and scientific rigor in everything we do
               </p>
@@ -69,7 +69,7 @@ export const About = () => {
               <div className="w-16 h-16 rounded-full gradient-primary mx-auto mb-4 flex items-center justify-center">
                 <Zap className="text-white" size={32} />
               </div>
-              <h4 className="text-2xl font-semibold mb-3">Impact</h4>
+              <h4 className="text-xl font-medium mb-3">Impact</h4>
               <p className="text-muted-foreground">
                 Making a meaningful difference in global health through accessible diagnostics
               </p>
@@ -91,7 +91,7 @@ export const About = () => {
           <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all">
             <div className="aspect-square bg-gradient-to-br from-primary to-secondary"></div>
             <div className="p-6">
-              <h4 className="text-xl font-semibold mb-1">Dr. Sanjeev Galande</h4>
+              <h4 className="text-lg font-medium mb-1">Dr. Sanjeev Galande</h4>
               <p className="text-sm text-primary mb-3">Co-Founder & CEO</p>
               <p className="text-sm text-muted-foreground">
                 Former research director with 15+ years in molecular diagnostics
@@ -102,7 +102,7 @@ export const About = () => {
           <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all">
             <div className="aspect-square bg-gradient-to-br from-secondary to-accent"></div>
             <div className="p-6">
-              <h4 className="text-xl font-semibold mb-1">Dr. Michael Roberts</h4>
+              <h4 className="text-lg font-medium mb-1">Dr. Michael Roberts</h4>
               <p className="text-sm text-secondary mb-3">Co-Founder & CTO</p>
               <p className="text-sm text-muted-foreground">
                 Biotechnology innovator with multiple patents in rapid testing
@@ -132,7 +132,7 @@ export const About = () => {
               </div>
               <div>
                 <div className="text-sm font-semibold text-primary mb-1">2019</div>
-                <h4 className="text-xl font-semibold mb-2">Company Founded</h4>
+                <h4 className="text-lg font-medium mb-2">Company Founded</h4>
                 <p className="text-muted-foreground">
                   Epidote Healthcare established with a focus on novel molecular testing approaches
                 </p>
@@ -147,7 +147,7 @@ export const About = () => {
               </div>
               <div>
                 <div className="text-sm font-semibold text-primary mb-1">2020</div>
-                <h4 className="text-xl font-semibold mb-2">Strategic Pivot</h4>
+                <h4 className="text-lg font-medium mb-2">Strategic Pivot</h4>
                 <p className="text-muted-foreground">
                   Shifted focus to practical diagnostic solutions for real-world healthcare challenges
                 </p>
@@ -162,7 +162,7 @@ export const About = () => {
               </div>
               <div>
                 <div className="text-sm font-semibold text-primary mb-1">2022</div>
-                <h4 className="text-xl font-semibold mb-2">First Product Launch</h4>
+                <h4 className="text-lg font-medium mb-2">First Product Launch</h4>
                 <p className="text-muted-foreground">
                   Introduced our vaccine integrity testing platform to the market
                 </p>
@@ -177,7 +177,7 @@ export const About = () => {
               </div>
               <div>
                 <div className="text-sm font-semibold text-primary mb-1">2024</div>
-                <h4 className="text-xl font-semibold mb-2">Global Expansion</h4>
+                <h4 className="text-lg font-medium mb-2">Global Expansion</h4>
                 <p className="text-muted-foreground">
                   Expanded to serve healthcare providers across multiple continents
                 </p>
