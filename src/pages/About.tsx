@@ -1,214 +1,168 @@
-import { Lightbulb, Heart, Zap, Calendar } from "lucide-react";
+import { Calendar } from "lucide-react";
 import { Card } from "@/components/ui/card";
+
 export const About = () => {
-  return <div className="min-h-screen pt-20">
+  return (
+    <div className="min-h-screen pt-20">
       {/* Our Story */}
       <section id="our-story" className="py-20 gradient-hero">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-light mb-6 animate-fade-in-up">Our Story</h1>
-            <p className="text-xl text-muted-foreground">
-              From research beginnings to diagnostic innovation
+            <h1 className="text-5xl md:text-6xl font-light mb-6 animate-fade-in-up">Inspired by Science. Driven by Purpose.</h1>
+            <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
+              Epidote — from Epigenetics and Antidote — was founded to bring precision and intelligence to healthcare. 
+              Rooted in one of India's leading research institutions, we develop tools that make diagnostics faster and more reliable.
             </p>
           </div>
         </div>
       </section>
 
-      <section className="py-20 container mx-auto px-4 lg:px-8">
-        <div className="max-w-3xl mx-auto">
-          <div className="prose prose-lg max-w-none">
-            <p className="text-lg text-muted-foreground mb-6">
-              Founded in 2019, Epidote Healthcare began with a vision to revolutionize healthcare through innovative diagnostic solutions. 
-              Our journey started in a small research lab, exploring novel approaches to molecular testing.
-            </p>
-            <p className="text-lg text-muted-foreground mb-6">
-              In 2020, we made a pivotal decision to pivot from pure research to practical diagnostics. We recognized that the healthcare 
-              industry desperately needed faster, more accurate, and more affordable testing solutions. This insight led us to develop 
-              our proprietary testing platform.
-            </p>
-            <p className="text-lg text-muted-foreground">
-              Today, Epidote Healthcare stands at the forefront of diagnostic innovation, serving healthcare providers worldwide with 
-              solutions that make a real difference in patient care.
-            </p>
+      {/* Our Journey */}
+      <section id="milestones" className="py-20 container mx-auto px-4 lg:px-8">
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-light mb-4">Milestones in Motion</h2>
+        </div>
+
+        <div className="max-w-3xl mx-auto space-y-8">
+          <div className="flex gap-6">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center shadow-medium">
+                <Calendar className="text-white" size={20} />
+              </div>
+            </div>
+            <div>
+              <div className="text-sm font-semibold text-primary mb-1">2019</div>
+              <h4 className="text-lg font-medium mb-2">Service operations begin</h4>
+              <p className="text-muted-foreground">
+                Epidote was established with a vision to revolutionize healthcare through precision diagnostics.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-6">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center shadow-medium">
+                <Calendar className="text-white" size={20} />
+              </div>
+            </div>
+            <div>
+              <div className="text-sm font-semibold text-primary mb-1">2022</div>
+              <h4 className="text-lg font-medium mb-2">AMR R&D launched</h4>
+              <p className="text-muted-foreground">
+                Launched dedicated research and development for antimicrobial resistance detection platforms.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-6">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center shadow-medium">
+                <Calendar className="text-white" size={20} />
+              </div>
+            </div>
+            <div>
+              <div className="text-sm font-semibold text-primary mb-1">2024</div>
+              <h4 className="text-lg font-medium mb-2">Planned equity investment round</h4>
+              <p className="text-muted-foreground">
+                Secured strategic investments to scale our diagnostic solutions.
+              </p>
+            </div>
+          </div>
+
+          <div className="flex gap-6">
+            <div className="flex-shrink-0">
+              <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center shadow-medium">
+                <Calendar className="text-white" size={20} />
+              </div>
+            </div>
+            <div>
+              <div className="text-sm font-semibold text-primary mb-1">2025</div>
+              <h4 className="text-lg font-medium mb-2">Clinical trials to commence</h4>
+              <p className="text-muted-foreground">
+                Initiating clinical trials to validate and expand our diagnostic platforms.
+              </p>
+            </div>
           </div>
         </div>
       </section>
 
-      {/* Mission & Values */}
-      <section id="mission-values" className="py-20 bg-muted/30">
+      {/* Founders */}
+      <section id="founders" className="py-20 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4">Mission & Values</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              The principles that guide everything we do
-            </p>
+            <h2 className="text-4xl md:text-5xl font-light mb-4">Scientific Leadership</h2>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 max-w-5xl mx-auto">
-            <Card className="p-8 text-center shadow-soft hover:shadow-medium transition-all">
-              <div className="w-16 h-16 rounded-full gradient-primary mx-auto mb-4 flex items-center justify-center">
-                <Lightbulb className="text-white" size={32} />
+          <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
+            <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all">
+              <div className="aspect-square bg-gradient-to-br from-primary to-secondary"></div>
+              <div className="p-6">
+                <h4 className="text-lg font-medium mb-1">Dr. Ashwin Kelkar</h4>
+                <p className="text-sm text-primary mb-3">Machine Learning Lead</p>
+                <p className="text-sm text-muted-foreground">
+                  Research at Penn State and Wellcome Trust Cambridge. Specializes in ML algorithms for genomic data.
+                </p>
               </div>
-              <h4 className="text-xl font-medium mb-3">Innovation</h4>
-              <p className="text-muted-foreground">
-                Continuously pushing the boundaries of what's possible in diagnostic technology
-              </p>
             </Card>
 
-            <Card className="p-8 text-center shadow-soft hover:shadow-medium transition-all">
-              <div className="w-16 h-16 rounded-full gradient-primary mx-auto mb-4 flex items-center justify-center">
-                <Heart className="text-white" size={32} />
+            <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all">
+              <div className="aspect-square bg-gradient-to-br from-secondary to-accent"></div>
+              <div className="p-6">
+                <h4 className="text-lg font-medium mb-1">Dr. Sanjeev Galande</h4>
+                <p className="text-sm text-secondary mb-3">Genomics Lead</p>
+                <p className="text-sm text-muted-foreground">
+                  Professor and Dean, Shiv Nadar University; former Fellow at LBNL, Berkeley. Expert in next-generation genomic pipelines.
+                </p>
               </div>
-              <h4 className="text-xl font-medium mb-3">Integrity</h4>
-              <p className="text-muted-foreground">
-                Maintaining the highest standards of quality and scientific rigor in everything we do
-              </p>
-            </Card>
-
-            <Card className="p-8 text-center shadow-soft hover:shadow-medium transition-all">
-              <div className="w-16 h-16 rounded-full gradient-primary mx-auto mb-4 flex items-center justify-center">
-                <Zap className="text-white" size={32} />
-              </div>
-              <h4 className="text-xl font-medium mb-3">Impact</h4>
-              <p className="text-muted-foreground">
-                Making a meaningful difference in global health through accessible diagnostics
-              </p>
             </Card>
           </div>
         </div>
       </section>
 
-      {/* Team */}
+      {/* Core Team */}
       <section id="team" className="py-20 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-light mb-4">Our Team</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-            Led by experts in molecular biology, diagnostics, and healthcare innovation
-          </p>
+          <h2 className="text-4xl md:text-5xl font-light mb-4">People Who Build the Platform</h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
-          <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all">
-            <div className="aspect-square bg-gradient-to-br from-primary to-secondary"></div>
-            <div className="p-6">
-              <h4 className="text-lg font-medium mb-1">Dr. Sanjeev Galande</h4>
-              <p className="text-sm text-primary mb-3">Co-Founder & CEO</p>
-              <p className="text-sm text-muted-foreground">
-                Former research director with 15+ years in molecular diagnostics
-              </p>
-            </div>
-          </Card>
-
-          <Card className="overflow-hidden shadow-soft hover:shadow-medium transition-all">
-            <div className="aspect-square bg-gradient-to-br from-secondary to-accent"></div>
-            <div className="p-6">
-              <h4 className="text-lg font-medium mb-1">Dr. Michael Roberts</h4>
-              <p className="text-sm text-secondary mb-3">Co-Founder & CTO</p>
-              <p className="text-sm text-muted-foreground">
-                Biotechnology innovator with multiple patents in rapid testing
-              </p>
-            </div>
-          </Card>
-
-        </div>
-      </section>
-
-      {/* Milestones */}
-      <section id="milestones" className="py-20 bg-muted/30">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl md:text-5xl font-light mb-4">Our Journey</h2>
-            <p className="text-xl text-muted-foreground max-w-2xl mx-auto">
-              Key milestones in our growth
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
+          <Card className="p-6 shadow-soft hover:shadow-medium transition-all">
+            <div className="aspect-square bg-gradient-to-br from-primary/20 to-secondary/20 rounded-lg mb-4"></div>
+            <h4 className="text-lg font-medium mb-1">Manmita Shah</h4>
+            <p className="text-sm text-primary mb-2">Strategy Lead</p>
+            <p className="text-sm text-muted-foreground">
+              Genomics strategy and NGS workflow design
             </p>
-          </div>
+          </Card>
 
-          <div className="max-w-3xl mx-auto space-y-8">
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center shadow-medium">
-                  <Calendar className="text-white" size={20} />
-                </div>
-              </div>
-              <div>
-                <div className="text-sm font-semibold text-primary mb-1">2019</div>
-                <h4 className="text-lg font-medium mb-2">Company Founded</h4>
-                <p className="text-muted-foreground">
-                  Epidote Healthcare established with a focus on novel molecular testing approaches
-                </p>
-              </div>
-            </div>
+          <Card className="p-6 shadow-soft hover:shadow-medium transition-all">
+            <div className="aspect-square bg-gradient-to-br from-secondary/20 to-accent/20 rounded-lg mb-4"></div>
+            <h4 className="text-lg font-medium mb-1">Tanvi Deshpande</h4>
+            <p className="text-sm text-primary mb-2">Bioinformatics Lead</p>
+            <p className="text-sm text-muted-foreground">
+              Data pipelines and machine learning integration
+            </p>
+          </Card>
 
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center shadow-medium">
-                  <Calendar className="text-white" size={20} />
-                </div>
-              </div>
-              <div>
-                <div className="text-sm font-semibold text-primary mb-1">2020</div>
-                <h4 className="text-lg font-medium mb-2">Strategic Pivot</h4>
-                <p className="text-muted-foreground">
-                  Shifted focus to practical diagnostic solutions for real-world healthcare challenges
-                </p>
-              </div>
-            </div>
+          <Card className="p-6 shadow-soft hover:shadow-medium transition-all">
+            <div className="aspect-square bg-gradient-to-br from-accent/20 to-primary/20 rounded-lg mb-4"></div>
+            <h4 className="text-lg font-medium mb-1">Vishakha Sadavarte</h4>
+            <p className="text-sm text-primary mb-2">Genomics Lead</p>
+            <p className="text-sm text-muted-foreground">
+              NGS workflows and sample operations
+            </p>
+          </Card>
 
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center shadow-medium">
-                  <Calendar className="text-white" size={20} />
-                </div>
-              </div>
-              <div>
-                <div className="text-sm font-semibold text-primary mb-1">2022</div>
-                <h4 className="text-lg font-medium mb-2">First Product Launch</h4>
-                <p className="text-muted-foreground">
-                  Introduced our vaccine integrity testing platform to the market
-                </p>
-              </div>
-            </div>
-
-            <div className="flex gap-6">
-              <div className="flex-shrink-0">
-                <div className="w-12 h-12 rounded-full gradient-primary flex items-center justify-center shadow-medium">
-                  <Calendar className="text-white" size={20} />
-                </div>
-              </div>
-              <div>
-                <div className="text-sm font-semibold text-primary mb-1">2024</div>
-                <h4 className="text-lg font-medium mb-2">Global Expansion</h4>
-                <p className="text-muted-foreground">
-                  Expanded to serve healthcare providers across multiple continents
-                </p>
-              </div>
-            </div>
-          </div>
+          <Card className="p-6 shadow-soft hover:shadow-medium transition-all">
+            <div className="aspect-square bg-gradient-to-br from-primary/20 to-accent/20 rounded-lg mb-4"></div>
+            <h4 className="text-lg font-medium mb-1">Dr. Deepali Phadke</h4>
+            <p className="text-sm text-primary mb-2">Healthcare Liaison</p>
+            <p className="text-sm text-muted-foreground">
+              Regulatory policy and clinical partnerships
+            </p>
+          </Card>
         </div>
       </section>
-
-      {/* Press & Partners - Optional */}
-      <section id="press-partners" className="py-20 container mx-auto px-4 lg:px-8">
-        <div className="text-center">
-          <h2 className="text-4xl md:text-5xl font-light mb-4">Recognition</h2>
-          <p className="text-xl text-muted-foreground max-w-2xl mx-auto mb-12">
-            Our work has been recognized by leading healthcare and technology organizations
-          </p>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-8 max-w-4xl mx-auto opacity-50">
-            <div className="h-20 bg-muted rounded-lg flex items-center justify-center">
-              <span className="text-sm font-semibold">Partner Logo</span>
-            </div>
-            <div className="h-20 bg-muted rounded-lg flex items-center justify-center">
-              <span className="text-sm font-semibold">Partner Logo</span>
-            </div>
-            <div className="h-20 bg-muted rounded-lg flex items-center justify-center">
-              <span className="text-sm font-semibold">Partner Logo</span>
-            </div>
-            <div className="h-20 bg-muted rounded-lg flex items-center justify-center">
-              <span className="text-sm font-semibold">Partner Logo</span>
-            </div>
-          </div>
-        </div>
-      </section>
-    </div>;
+    </div>
+  );
 };

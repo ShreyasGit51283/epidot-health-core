@@ -37,14 +37,6 @@ export const Header = ({ onContactClick }: HeaderProps) => {
                 Home
               </Button>
             </Link>
-            <Link to="/products">
-              <Button 
-                variant="ghost"
-                className={`${isActive('/products') ? 'bg-muted' : ''} hover:bg-muted transition-colors`}
-              >
-                Products
-              </Button>
-            </Link>
             <Link to="/about">
               <Button 
                 variant="ghost"
@@ -81,14 +73,6 @@ export const Header = ({ onContactClick }: HeaderProps) => {
                   className={`w-full justify-start ${isActive('/') ? 'bg-muted' : ''}`}
                 >
                   Home
-                </Button>
-              </Link>
-              <Link to="/products" onClick={() => setIsMenuOpen(false)}>
-                <Button 
-                  variant="ghost"
-                  className={`w-full justify-start ${isActive('/products') ? 'bg-muted' : ''}`}
-                >
-                  Products
                 </Button>
               </Link>
               <Link to="/about" onClick={() => setIsMenuOpen(false)}>

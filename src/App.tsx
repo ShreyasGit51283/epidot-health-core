@@ -8,7 +8,6 @@ import { Header } from "@/components/Header";
 import { Footer } from "@/components/Footer";
 import { ContactModal } from "@/components/ContactModal";
 import { Home } from "@/pages/Home";
-import { Products } from "@/pages/Products";
 import { About } from "@/pages/About";
 import NotFound from "./pages/NotFound";
 
@@ -28,7 +27,6 @@ const App = () => {
             <main className="flex-1">
               <Routes>
                 <Route path="/" element={<Home onContactClick={() => setIsContactModalOpen(true)} />} />
-                <Route path="/products" element={<Products />} />
                 <Route path="/about" element={<About />} />
                 <Route path="*" element={<NotFound />} />
               </Routes>
