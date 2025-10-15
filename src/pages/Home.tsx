@@ -47,7 +47,10 @@ export const Home = ({ onContactClick }: HomeProps) => {
           
           <div className="flex flex-wrap justify-center gap-4 mb-20">
             <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-primary font-medium">Rapid Scalable</span>
+              <span className="text-primary font-medium">Rapid</span>
+            </div>
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
+              <span className="text-primary font-medium">Scalable</span>
             </div>
             <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
               <span className="text-secondary font-medium">Accurate</span>
