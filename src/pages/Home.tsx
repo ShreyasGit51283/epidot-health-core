@@ -65,7 +65,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h3 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">AntiPath-ML, a self learning antibiotic resistance screening platform</h3>
+          <h3 className="text-2xl md:text-3xl font-normal mb-6 tracking-tight">AntiPath-ML, a self learning antibiotic resistance screening platform</h3>
           <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-12">
             AntiPath-ML achieves high accuracy across all major AMR pathogens. It learns continuously, improving with every dataset. Reports are generated instantly. Costs are reduced significantly. Our goal is simple: better data, faster decisions. Our systems enable large-scale screening and vaccine integrity testing, optimized for use across low- and middle-income, high-burden regions, where diagnostic access is most critical.
           </p>
