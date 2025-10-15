@@ -39,8 +39,34 @@ export const Home = ({ onContactClick }: HomeProps) => {
 
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-normal mb-5 tracking-tight">Your Genomic Intelligence Platform</h2>
+        <div className="text-center mb-16">
+          <h2 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Your Genomic Intelligence Platform</h2>
+          <p className="text-2xl font-light mb-8">AntiPath-ML: Fast, Precise, Predictive.</p>
+          <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-10">
+            An AMR screening platform, A real-time genomics-based, ML empowered, designed for India and other LMICs.
+          </p>
+          
+          <div className="mb-20">
+            <h3 className="text-xl font-medium mb-6">Features of AntiPath</h3>
+            <div className="flex flex-wrap justify-center gap-6 text-muted-foreground">
+              <span className="flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-primary" strokeWidth={1.5} />
+                Rapid Scalable
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-primary" strokeWidth={1.5} />
+                Accurate
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-primary" strokeWidth={1.5} />
+                Portable
+              </span>
+              <span className="flex items-center gap-2">
+                <CheckCircle2 className="w-5 h-5 text-primary" strokeWidth={1.5} />
+                Affordable
+              </span>
+            </div>
+          </div>
         </div>
 
         <div className="max-w-7xl mx-auto space-y-32">
@@ -51,23 +77,9 @@ export const Home = ({ onContactClick }: HomeProps) => {
                 <Target className="w-6 h-6 text-primary" strokeWidth={1.5} />
               </div>
               <h3 className="text-3xl font-normal mb-4 tracking-tight">Precision Detection</h3>
-              <p className="text-lg text-muted-foreground font-normal leading-relaxed mb-6">
-                Our platform utilizes genomic data and adaptive machine learning to detect antimicrobial resistance across all major AMR pathogens with unprecedented accuracy.
+              <p className="text-lg text-muted-foreground font-normal leading-relaxed">
+                Our platform utilizes genomic data and adaptive machine learning to detect antimicrobial resistance.
               </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" strokeWidth={1.5} />
-                  <span className="text-muted-foreground font-normal">Rapid results in real-time</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" strokeWidth={1.5} />
-                  <span className="text-muted-foreground font-normal">Scalable for high-volume testing</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-primary flex-shrink-0" strokeWidth={1.5} />
-                  <span className="text-muted-foreground font-normal">Accurate across all major pathogens</span>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
@@ -86,24 +98,10 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-6">
                 <Zap className="w-6 h-6 text-secondary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-3xl font-normal mb-4 tracking-tight">Instant insights</h3>
-              <p className="text-lg text-muted-foreground font-normal leading-relaxed mb-6">
-                Get faster, more scalable, and more affordable results in real time, surpassing conventional methods with AI-powered genomic analysis.
+              <h3 className="text-3xl font-normal mb-4 tracking-tight">Real-Time Results</h3>
+              <p className="text-lg text-muted-foreground font-normal leading-relaxed">
+                Get faster, more scalable, and more affordable results in real time, surpassing conventional methods.
               </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" strokeWidth={1.5} />
-                  <span className="text-muted-foreground font-normal">Portable diagnostic platform</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" strokeWidth={1.5} />
-                  <span className="text-muted-foreground font-normal">Affordable for LMICs</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-secondary flex-shrink-0" strokeWidth={1.5} />
-                  <span className="text-muted-foreground font-normal">Continuous learning AI models</span>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
@@ -123,23 +121,9 @@ export const Home = ({ onContactClick }: HomeProps) => {
                 <IndianRupee className="w-6 h-6 text-accent" strokeWidth={1.5} />
               </div>
               <h3 className="text-3xl font-normal mb-4 tracking-tight">Early Intervention</h3>
-              <p className="text-lg text-muted-foreground font-normal leading-relaxed mb-6">
-                Timely and accurate detection enables crucial early intervention, improving patient outcomes and reducing healthcare costs across high-burden regions.
+              <p className="text-lg text-muted-foreground font-normal leading-relaxed">
+                Timely and accurate detection enables crucial early intervention, improving patient outcomes.
               </p>
-              <div className="space-y-3">
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" strokeWidth={1.5} />
-                  <span className="text-muted-foreground font-normal">Better patient outcomes</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" strokeWidth={1.5} />
-                  <span className="text-muted-foreground font-normal">Reduced treatment costs</span>
-                </div>
-                <div className="flex items-center gap-3">
-                  <CheckCircle2 className="w-5 h-5 text-accent flex-shrink-0" strokeWidth={1.5} />
-                  <span className="text-muted-foreground font-normal">Large-scale screening capability</span>
-                </div>
-              </div>
             </div>
             <div className="relative">
               <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
