@@ -8,7 +8,7 @@ export const About = () => {
       <section id="our-story" className="py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
-            <h1 className="text-5xl md:text-6xl font-normal mb-8 animate-fade-in-up tracking-tight">Inspired by Science. Driven by Purpose.</h1>
+            <h1 className="text-h1 mb-8 animate-fade-in-up text-foreground">Inspired by Science. Driven by Purpose.</h1>
             <p className="text-lg md:text-xl text-muted-foreground max-w-3xl mx-auto font-normal leading-relaxed">
               Epidote — from Epigenetics and Antidote — was founded to bring precision and intelligence to healthcare. 
               Rooted in one of India's leading research institutions, we develop tools that make diagnostics faster and more reliable.
