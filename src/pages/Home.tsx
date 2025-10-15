@@ -88,7 +88,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-2xl md:text-3xl font-normal mb-6 tracking-tight">
+          <h2 className="text-h2 mb-6">
             AntiPath-ML, a self learning antibiotic resistance screening platform
           </h2>
           <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-12">

@@ -21,7 +21,7 @@ export const About = () => {
       <section id="milestones" className="py-24 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-2xl md:text-3xl font-normal mb-6 tracking-tight">Milestones in Motion</h2>
+            <h2 className="text-h2 mb-6">Milestones in Motion</h2>
           </div>
 
         <div className="max-w-3xl mx-auto space-y-8">
@@ -92,7 +92,7 @@ export const About = () => {
       <section id="founders" className="py-24 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-2xl md:text-3xl font-normal mb-6 tracking-tight">Scientific Leadership</h2>
+            <h2 className="text-h2 mb-6">Scientific Leadership</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -124,7 +124,7 @@ export const About = () => {
       {/* Core Team */}
       <section id="team" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-2xl md:text-3xl font-normal mb-6 tracking-tight">Team</h2>
+          <h2 className="text-h2 mb-6">Team</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
