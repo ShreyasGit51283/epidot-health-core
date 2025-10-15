@@ -33,6 +33,16 @@ export const Home = ({ onContactClick }: HomeProps) => {
               />
             </Card>
           </div>
+
+          <div className="mt-8 flex justify-center">
+            <Button 
+              size="lg" 
+              className="gradient-primary text-white shadow-medium hover:shadow-large transition-all rounded-full px-8 font-medium"
+            >
+              Learn More
+              <ArrowRight className="ml-2" size={20} />
+            </Button>
+          </div>
         </div>
       </section>
 
