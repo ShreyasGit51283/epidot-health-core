@@ -40,8 +40,8 @@ export const Home = ({ onContactClick }: HomeProps) => {
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
+          <h2 className="text-2xl font-light mb-6">AntiPath-ML: Fast, Precise, Predictive.</h2>
           <h2 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Your Genomic Intelligence Platform</h2>
-          <p className="text-2xl font-light mb-8">AntiPath-ML: Fast, Precise, Predictive.</p>
           <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-10">
             An AMR screening platform, A real-time genomics-based, ML empowered, designed for India and other LMICs.
           </p>
