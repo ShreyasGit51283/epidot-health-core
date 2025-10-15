@@ -37,6 +37,19 @@ export const Home = ({ onContactClick }: HomeProps) => {
         </div>
       </section>
 
+      {/* Decorative Element */}
+      <div className="container mx-auto px-4 lg:px-8 py-16">
+        <svg className="w-full max-w-md mx-auto opacity-20" viewBox="0 0 200 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <circle cx="100" cy="50" r="30" stroke="currentColor" strokeWidth="0.5" strokeDasharray="4 4" className="text-primary"/>
+          <circle cx="100" cy="50" r="20" stroke="currentColor" strokeWidth="0.5" className="text-secondary"/>
+          <circle cx="100" cy="50" r="4" fill="currentColor" className="text-accent"/>
+          <line x1="30" y1="50" x2="70" y2="50" stroke="currentColor" strokeWidth="0.5" className="text-primary"/>
+          <line x1="130" y1="50" x2="170" y2="50" stroke="currentColor" strokeWidth="0.5" className="text-primary"/>
+          <circle cx="30" cy="50" r="3" fill="currentColor" className="text-secondary"/>
+          <circle cx="170" cy="50" r="3" fill="currentColor" className="text-secondary"/>
+        </svg>
+      </div>
+
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
@@ -102,6 +115,17 @@ export const Home = ({ onContactClick }: HomeProps) => {
             </div>
           </div>
 
+          {/* Decorative Element */}
+          <div className="flex justify-center py-8">
+            <svg className="w-32 h-32 opacity-20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="50" cy="50" r="35" stroke="currentColor" strokeWidth="0.5" className="text-secondary"/>
+              <circle cx="50" cy="50" r="25" stroke="currentColor" strokeWidth="0.5" strokeDasharray="3 3" className="text-primary"/>
+              <line x1="50" y1="15" x2="50" y2="35" stroke="currentColor" strokeWidth="0.5" className="text-accent"/>
+              <line x1="50" y1="65" x2="50" y2="85" stroke="currentColor" strokeWidth="0.5" className="text-accent"/>
+              <circle cx="50" cy="50" r="5" fill="currentColor" className="text-primary"/>
+            </svg>
+          </div>
+
           {/* Real-Time Results */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -122,6 +146,20 @@ export const Home = ({ onContactClick }: HomeProps) => {
                 />
               </Card>
             </div>
+          </div>
+
+          {/* Decorative Element */}
+          <div className="flex justify-center py-8">
+            <svg className="w-32 h-32 opacity-20" viewBox="0 0 100 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="30" cy="50" r="8" stroke="currentColor" strokeWidth="0.5" className="text-accent"/>
+              <circle cx="50" cy="50" r="8" stroke="currentColor" strokeWidth="0.5" className="text-primary"/>
+              <circle cx="70" cy="50" r="8" stroke="currentColor" strokeWidth="0.5" className="text-secondary"/>
+              <line x1="38" y1="50" x2="42" y2="50" stroke="currentColor" strokeWidth="0.5" className="text-primary"/>
+              <line x1="58" y1="50" x2="62" y2="50" stroke="currentColor" strokeWidth="0.5" className="text-primary"/>
+              <circle cx="30" cy="50" r="2" fill="currentColor" className="text-accent"/>
+              <circle cx="50" cy="50" r="2" fill="currentColor" className="text-primary"/>
+              <circle cx="70" cy="50" r="2" fill="currentColor" className="text-secondary"/>
+            </svg>
           </div>
 
           {/* Early Intervention */}
