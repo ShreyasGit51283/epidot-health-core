@@ -38,7 +38,7 @@ export const Header = ({ onContactClick }: HeaderProps) => {
             <Button 
               onClick={onContactClick}
               variant="outline"
-              className="rounded-full border-border hover:bg-muted transition-all font-normal"
+              className="rounded-full border-border hover:gradient-primary hover:text-white hover:border-transparent transition-all font-normal hover:shadow-medium"
             >
               Get in touch
             </Button>
@@ -70,7 +70,7 @@ export const Header = ({ onContactClick }: HeaderProps) => {
                   setIsMenuOpen(false);
                 }}
                 variant="outline"
-                className="rounded-full mx-4"
+                className="rounded-full mx-4 hover:gradient-primary hover:text-white hover:border-transparent transition-all hover:shadow-medium"
               >
                 Get in touch
               </Button>
