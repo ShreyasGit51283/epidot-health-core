@@ -5,7 +5,7 @@ export const About = () => {
   return (
     <div className="min-h-screen pt-20">
       {/* Our Story */}
-      <section id="our-story" className="py-24 gradient-hero">
+      <section id="our-story" className="py-24 bg-white">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="max-w-4xl mx-auto text-center">
             <h1 className="text-5xl md:text-6xl font-normal mb-8 animate-fade-in-up tracking-tight">Inspired by Science. Driven by Purpose.</h1>
@@ -18,10 +18,11 @@ export const About = () => {
       </section>
 
       {/* Our Journey */}
-      <section id="milestones" className="py-24 container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight">Milestones in Motion</h2>
-        </div>
+      <section id="milestones" className="py-24 bg-muted/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-h2 mb-4">Milestones in Motion</h2>
+          </div>
 
         <div className="max-w-3xl mx-auto space-y-8">
           <div className="flex gap-6">
@@ -84,13 +85,14 @@ export const About = () => {
             </div>
           </div>
         </div>
+        </div>
       </section>
 
       {/* Founders */}
       <section id="founders" className="py-24 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight">Scientific Leadership</h2>
+            <h2 className="text-h2 mb-4">Scientific Leadership</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -122,7 +124,7 @@ export const About = () => {
       {/* Core Team */}
       <section id="team" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-20">
-          <h2 className="text-4xl md:text-5xl font-normal mb-4 tracking-tight">People Who Build the Platform</h2>
+          <h2 className="text-h2 mb-4">Team</h2>
         </div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 max-w-6xl mx-auto">
