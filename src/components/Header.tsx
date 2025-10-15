@@ -15,7 +15,7 @@ export const Header = ({ onContactClick }: HeaderProps) => {
   const isActive = (path: string) => location.pathname === path;
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-background/80 backdrop-blur-lg border-b border-border">
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-md border-b border-border/50">
       <nav className="container mx-auto px-4 lg:px-8">
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
@@ -28,28 +28,19 @@ export const Header = ({ onContactClick }: HeaderProps) => {
           </Link>
 
           {/* Desktop Navigation */}
-          <div className="hidden md:flex items-center space-x-1">
-            <Link to="/">
-              <Button 
-                variant="ghost" 
-                className={`${isActive('/') ? 'bg-muted' : ''} hover:bg-muted transition-colors`}
-              >
-                Home
-              </Button>
+          <div className="hidden md:flex items-center gap-8">
+            <Link to="/products" className="text-foreground/80 hover:text-foreground transition-colors font-normal">
+              Products
             </Link>
-            <Link to="/about">
-              <Button 
-                variant="ghost"
-                className={`${isActive('/about') ? 'bg-muted' : ''} hover:bg-muted transition-colors`}
-              >
-                About
-              </Button>
+            <Link to="/about" className="text-foreground/80 hover:text-foreground transition-colors font-normal">
+              About us
             </Link>
             <Button 
               onClick={onContactClick}
-              className="ml-4 gradient-primary text-white shadow-soft hover:shadow-medium transition-all"
+              variant="outline"
+              className="rounded-full border-border hover:bg-muted transition-all font-normal"
             >
-              Contact
+              Get in touch
             </Button>
           </div>
 
@@ -67,30 +58,21 @@ export const Header = ({ onContactClick }: HeaderProps) => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col space-y-2">
-              <Link to="/" onClick={() => setIsMenuOpen(false)}>
-                <Button 
-                  variant="ghost" 
-                  className={`w-full justify-start ${isActive('/') ? 'bg-muted' : ''}`}
-                >
-                  Home
-                </Button>
+              <Link to="/products" onClick={() => setIsMenuOpen(false)} className="px-4 py-2 text-foreground/80 hover:text-foreground transition-colors">
+                Products
               </Link>
-              <Link to="/about" onClick={() => setIsMenuOpen(false)}>
-                <Button 
-                  variant="ghost"
-                  className={`w-full justify-start ${isActive('/about') ? 'bg-muted' : ''}`}
-                >
-                  About
-                </Button>
+              <Link to="/about" onClick={() => setIsMenuOpen(false)} className="px-4 py-2 text-foreground/80 hover:text-foreground transition-colors">
+                About us
               </Link>
               <Button 
                 onClick={() => {
                   onContactClick();
                   setIsMenuOpen(false);
                 }}
-                className="gradient-primary text-white"
+                variant="outline"
+                className="rounded-full mx-4"
               >
-                Contact
+                Get in touch
               </Button>
             </div>
           </div>

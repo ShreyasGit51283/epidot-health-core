@@ -14,25 +14,24 @@ export const Home = ({ onContactClick }: HomeProps) => {
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
-      <section id="hero" className="relative min-h-[90vh] flex items-center justify-center gradient-hero overflow-hidden">
-        <div className="absolute inset-0 opacity-5">
-          <img src={heroPoster} alt="" className="w-full h-full object-cover" />
-        </div>
-        
-        <div className="container mx-auto px-4 lg:px-8 relative z-10 text-center">
-          <div className="max-w-4xl mx-auto animate-fade-in-up">
-            <h1 className="text-5xl md:text-7xl font-normal mb-6 tracking-tight text-foreground">
-              Precision Genomics for a <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Healthier Future</span>
-            </h1>
-            <p className="text-lg md:text-xl text-muted-foreground mb-10 max-w-2xl mx-auto font-normal">
-              Epidote Tech combines genomics and machine learning to address antibiotic resistance — challenges of modern medicine.
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 justify-center">
-              <Button size="lg" className="gradient-primary text-white shadow-medium hover:shadow-large transition-all rounded-full px-8 font-medium">
-                Explore AntiPath-ML
-                <ArrowRight className="ml-2" size={20} />
-              </Button>
-            </div>
+      <section id="hero" className="py-24 lg:py-32 container mx-auto px-4 lg:px-8">
+        <div className="max-w-5xl mx-auto text-center animate-fade-in-up">
+          <h1 className="text-4xl md:text-6xl font-normal mb-6 tracking-tight text-foreground">
+            Precision Genomics for a <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Healthier Future</span>
+          </h1>
+          <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto font-normal leading-relaxed">
+            Founded in 2019, Epidote Healthcare pivoted from initial research to focus on revolutionary diagnostic solutions. Our mission is to make advanced testing accessible, affordable, and rapid.
+          </p>
+          
+          {/* Hero Image in Curved Container */}
+          <div className="relative max-w-4xl mx-auto">
+            <Card className="overflow-hidden shadow-large border border-border/50 rounded-3xl aspect-video">
+              <img 
+                src={heroPoster} 
+                alt="Epidote Healthcare Laboratory" 
+                className="w-full h-full object-cover"
+              />
+            </Card>
           </div>
         </div>
       </section>
