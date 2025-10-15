@@ -186,6 +186,53 @@ export const Home = ({ onContactClick }: HomeProps) => {
         </div>
       </section>
 
+      {/* Contact Section */}
+      <section id="contact" className="py-24 container mx-auto px-4 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-12">
+            <h2 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Get in Touch</h2>
+            <p className="text-lg text-muted-foreground font-normal max-w-2xl mx-auto">
+              Ready to revolutionize your approach to antimicrobial resistance detection? Let's discuss how AntiPath-ML can transform your diagnostic capabilities.
+            </p>
+          </div>
+          
+          <div className="grid md:grid-cols-3 gap-8 mb-12">
+            <Card className="p-8 shadow-soft border border-border/50 hover:shadow-medium transition-all">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
+                <CheckCircle2 className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-lg font-medium mb-2">Schedule a Demo</h3>
+              <p className="text-sm text-muted-foreground">See AntiPath-ML in action</p>
+            </Card>
+            
+            <Card className="p-8 shadow-soft border border-border/50 hover:shadow-medium transition-all">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-4">
+                <Target className="w-6 h-6 text-secondary" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-lg font-medium mb-2">Partner With Us</h3>
+              <p className="text-sm text-muted-foreground">Collaborate on research</p>
+            </Card>
+            
+            <Card className="p-8 shadow-soft border border-border/50 hover:shadow-medium transition-all">
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-4">
+                <Gauge className="w-6 h-6 text-accent" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-lg font-medium mb-2">Request Access</h3>
+              <p className="text-sm text-muted-foreground">Join early adopters</p>
+            </Card>
+          </div>
+          
+          <Button 
+            size="lg" 
+            className="gradient-primary text-white shadow-medium hover:shadow-large transition-all rounded-full px-8 font-medium"
+            onClick={onContactClick}
+          >
+            Contact Us
+            <ArrowRight className="ml-2" size={20} />
+          </Button>
+        </div>
+      </section>
+
     </div>
   );
 };
