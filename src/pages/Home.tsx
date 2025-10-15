@@ -65,7 +65,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">AntiPath-ML, a self learning antibiotic resistance screening platform</h2>
+          <h3 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">AntiPath-ML, a self learning antibiotic resistance screening platform</h3>
           <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-12">
             AntiPath-ML achieves high accuracy across all major AMR pathogens. It learns continuously, improving with every dataset. Reports are generated instantly. Costs are reduced significantly. Our goal is simple: better data, faster decisions. Our systems enable large-scale screening and vaccine integrity testing, optimized for use across low- and middle-income, high-burden regions, where diagnostic access is most critical.
           </p>
@@ -199,9 +199,9 @@ export const Home = ({ onContactClick }: HomeProps) => {
       </section>
 
       {/* Customers Section */}
-      <section id="customers" className="py-24 container mx-auto px-4 lg:px-8">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-normal mb-16 tracking-tight">Trusted by Leading Organizations</h2>
+      <section id="customers" className="py-24" style={{ backgroundColor: '#F8F8F8' }}>
+        <div className="max-w-5xl mx-auto text-center px-4 lg:px-8">
+          <h3 className="text-4xl md:text-5xl font-normal mb-16 tracking-tight">Trusted by Leading Organizations</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
             <div className="flex items-center justify-center h-24">
               <img 
@@ -229,10 +229,10 @@ export const Home = ({ onContactClick }: HomeProps) => {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-24" style={{ backgroundColor: '#F8F8F8' }}>
-        <div className="max-w-4xl mx-auto text-center px-4 lg:px-8">
+      <section id="contact" className="py-24 container mx-auto px-4 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12">
-            <h2 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Get in Touch</h2>
+            <h3 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Get in Touch</h3>
             <p className="text-lg text-muted-foreground font-normal max-w-2xl mx-auto">
               Ready to revolutionize your approach to antimicrobial resistance detection? Let's discuss how AntiPath-ML can transform your diagnostic capabilities.
             </p>
