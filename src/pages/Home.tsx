@@ -40,31 +40,23 @@ export const Home = ({ onContactClick }: HomeProps) => {
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-2xl font-light mb-6">AntiPath-ML: Fast, Precise, Predictive.</h2>
           <h2 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Your Genomic Intelligence Platform</h2>
-          <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-10">
-            An AMR screening platform, A real-time genomics-based, ML empowered, designed for India and other LMICs.
+          <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-12">
+            Antipath-ML, An AMR screening platform, A real-time genomics-based, ML empowered, designed for India and other LMICs.
           </p>
           
-          <div className="mb-20">
-            <h3 className="text-xl font-medium mb-6">Features of AntiPath</h3>
-            <div className="flex flex-wrap justify-center gap-6 text-muted-foreground">
-              <span className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-primary" strokeWidth={1.5} />
-                Rapid Scalable
-              </span>
-              <span className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-primary" strokeWidth={1.5} />
-                Accurate
-              </span>
-              <span className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-primary" strokeWidth={1.5} />
-                Portable
-              </span>
-              <span className="flex items-center gap-2">
-                <CheckCircle2 className="w-5 h-5 text-primary" strokeWidth={1.5} />
-                Affordable
-              </span>
+          <div className="flex flex-wrap justify-center gap-4 mb-20">
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
+              <span className="text-primary font-medium">Rapid Scalable</span>
+            </div>
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
+              <span className="text-secondary font-medium">Accurate</span>
+            </div>
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-accent/10 to-accent/5 border border-accent/20 shadow-soft hover:shadow-medium transition-all">
+              <span className="text-accent font-medium">Portable</span>
+            </div>
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-secondary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
+              <span className="text-primary font-medium">Affordable</span>
             </div>
           </div>
         </div>
