@@ -1,4 +1,4 @@
-import { ArrowRight, Zap, Target, Gauge, IndianRupee, CheckCircle2 } from "lucide-react";
+import { ArrowRight, Zap, Target, Gauge, IndianRupee, CheckCircle2, Rocket, TrendingUp, Crosshair, Package } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
 import heroPoster from "@/assets/hero-video-poster.jpg";
@@ -47,19 +47,34 @@ export const Home = ({ onContactClick }: HomeProps) => {
           
           <div className="flex flex-wrap justify-center gap-4 mb-20">
             <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-primary font-medium">Rapid</span>
+              <span className="text-primary font-medium flex items-center gap-2">
+                <Rocket className="w-4 h-4" strokeWidth={2} />
+                Rapid
+              </span>
             </div>
             <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-primary font-medium">Scalable</span>
+              <span className="text-primary font-medium flex items-center gap-2">
+                <TrendingUp className="w-4 h-4" strokeWidth={2} />
+                Scalable
+              </span>
             </div>
             <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-secondary font-medium">Accurate</span>
+              <span className="text-secondary font-medium flex items-center gap-2">
+                <Crosshair className="w-4 h-4" strokeWidth={2} />
+                Accurate
+              </span>
             </div>
             <div className="px-6 py-3 rounded-full bg-gradient-to-r from-accent/10 to-accent/5 border border-accent/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-accent font-medium">Portable</span>
+              <span className="text-accent font-medium flex items-center gap-2">
+                <Package className="w-4 h-4" strokeWidth={2} />
+                Portable
+              </span>
             </div>
             <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-secondary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-primary font-medium">Affordable</span>
+              <span className="text-primary font-medium flex items-center gap-2">
+                <IndianRupee className="w-4 h-4" strokeWidth={2} />
+                Affordable
+              </span>
             </div>
           </div>
         </div>
