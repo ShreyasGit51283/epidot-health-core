@@ -19,6 +19,7 @@ export default {
       fontSize: {
         // Custom H1 size - use as 'text-h1'
         h1: ["3.85rem", { lineHeight: "1.2", fontWeight: "800", letterSpacing: "-0.02em" }],
+        h2: ["2.5rem", { lineHeight: "1.2", fontWeight: "600", letterSpacing: "-0.02em" }],
         h3: ["1.3rem", { lineHeight: "2.25", fontWeight: "700", letterSpacing: "-0.02em" }],
         // You can add more: 'h2', 'h3', etc.
       },
