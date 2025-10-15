@@ -5,6 +5,9 @@ import heroPoster from "@/assets/hero-video-poster.jpg";
 import precisionDetection from "@/assets/precision-detection.jpg";
 import realtimeResults from "@/assets/realtime-results.jpg";
 import earlyIntervention from "@/assets/early-intervention.jpg";
+import serumLogo from "@/assets/serum-institute-logo.png";
+import whoLogo from "@/assets/who-logo.png";
+import cdcLogo from "@/assets/cdc-logo.png";
 
 interface HomeProps {
   onContactClick: () => void;
@@ -195,9 +198,39 @@ export const Home = ({ onContactClick }: HomeProps) => {
         </div>
       </section>
 
+      {/* Customers Section */}
+      <section id="customers" className="py-24 container mx-auto px-4 lg:px-8">
+        <div className="max-w-5xl mx-auto text-center">
+          <h2 className="text-4xl md:text-5xl font-normal mb-16 tracking-tight">Trusted by Leading Organizations</h2>
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
+            <div className="flex items-center justify-center h-24">
+              <img 
+                src={serumLogo} 
+                alt="Serum Institute of India" 
+                className="max-h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center h-24">
+              <img 
+                src={whoLogo} 
+                alt="World Health Organization" 
+                className="max-h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+            <div className="flex items-center justify-center h-24">
+              <img 
+                src={cdcLogo} 
+                alt="Centers for Disease Control and Prevention" 
+                className="max-h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
+              />
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Contact Section */}
-      <section id="contact" className="py-24 container mx-auto px-4 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
+      <section id="contact" className="py-24" style={{ backgroundColor: '#F8F8F8' }}>
+        <div className="max-w-4xl mx-auto text-center px-4 lg:px-8">
           <div className="mb-12">
             <h2 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Get in Touch</h2>
             <p className="text-lg text-muted-foreground font-normal max-w-2xl mx-auto">
@@ -236,7 +269,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
             className="gradient-primary text-white shadow-medium hover:shadow-large transition-all rounded-full px-8 font-medium"
             onClick={onContactClick}
           >
-            Contact Us
+            Get in Touch
             <ArrowRight className="ml-2" size={20} />
           </Button>
         </div>
