@@ -20,7 +20,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
             Precision Genomics for a <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">Healthier Future</span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto font-normal leading-relaxed">
-            Founded in 2019, Epidote Healthcare pivoted from initial research to focus on revolutionary diagnostic solutions. Our mission is to make advanced testing accessible, affordable, and rapid.
+            Epidote Tech combines genomics and machine learning to tackle the challenges of antibiotic resistance
           </p>
           
           {/* Hero Image in Curved Container */}
