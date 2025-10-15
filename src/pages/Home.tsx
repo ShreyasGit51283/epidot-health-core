@@ -40,9 +40,9 @@ export const Home = ({ onContactClick }: HomeProps) => {
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Your Genomic Intelligence Platform</h2>
+          <h2 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">AntiPath-ML, a self learning antibiotic resistance screening platform</h2>
           <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-12">
-            Antipath-ML, An AMR screening platform, A real-time genomics-based, ML empowered, designed for India and other LMICs.
+            AntiPath-ML achieves high accuracy across all major AMR pathogens. It learns continuously, improving with every dataset. Reports are generated instantly. Costs are reduced significantly. Our goal is simple: better data, faster decisions. Our systems enable large-scale screening and vaccine integrity testing, optimized for use across low- and middle-income, high-burden regions, where diagnostic access is most critical.
           </p>
           
           <div className="flex flex-wrap justify-center gap-4 mb-20">
@@ -148,20 +148,6 @@ export const Home = ({ onContactClick }: HomeProps) => {
         </div>
       </section>
 
-      {/* The Epidote Advantage */}
-      <section id="advantage" className="py-24 bg-muted/30">
-        <div className="container mx-auto px-4 lg:px-8">
-          <div className="max-w-4xl mx-auto text-center">
-            <h2 className="text-4xl md:text-5xl font-normal mb-8 tracking-tight">Technology That Moves With Intelligence</h2>
-            <p className="text-lg text-muted-foreground leading-relaxed font-normal">
-              AntiPath-ML achieves high accuracy across all major AMR pathogens. It learns continuously, improving with every dataset. 
-              Reports are generated instantly. Costs are reduced significantly. Our goal is simple: better data, faster decisions. 
-              Our systems enable large-scale screening and vaccine integrity testing, optimized for use across low- and middle-income, 
-              high-burden regions, where diagnostic access is most critical.
-            </p>
-          </div>
-        </div>
-      </section>
     </div>
   );
 };
