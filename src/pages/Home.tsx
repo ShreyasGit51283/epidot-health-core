@@ -65,7 +65,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h3 className="text-2xl md:text-3xl font-normal mb-6 tracking-tight">AntiPath-ML, a self learning antibiotic resistance screening platform</h3>
+          <h3 className="text-h3 mb-6">AntiPath-ML, a self learning antibiotic resistance screening platform</h3>
           <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-12">
             AntiPath-ML achieves high accuracy across all major AMR pathogens. It learns continuously, improving with every dataset. Reports are generated instantly. Costs are reduced significantly. Our goal is simple: better data, faster decisions. Our systems enable large-scale screening and vaccine integrity testing, optimized for use across low- and middle-income, high-burden regions, where diagnostic access is most critical.
           </p>
@@ -111,7 +111,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-6">
                 <Target className="w-6 h-6 text-primary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-3xl font-normal mb-4 tracking-tight">Precision Detection</h3>
+              <h3 className="text-h3 mb-4">Precision Detection</h3>
               <p className="text-lg text-muted-foreground font-normal leading-relaxed">
                 Our platform utilizes genomic data and adaptive machine learning to detect antimicrobial resistance.
               </p>
@@ -144,7 +144,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-6">
                 <Zap className="w-6 h-6 text-secondary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-3xl font-normal mb-4 tracking-tight">Real-Time Results</h3>
+              <h3 className="text-h3 mb-4">Real-Time Results</h3>
               <p className="text-lg text-muted-foreground font-normal leading-relaxed">
                 Get faster, more scalable, and more affordable results in real time, surpassing conventional methods.
               </p>
@@ -180,7 +180,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-6">
                 <IndianRupee className="w-6 h-6 text-accent" strokeWidth={1.5} />
               </div>
-              <h3 className="text-3xl font-normal mb-4 tracking-tight">Early Intervention</h3>
+              <h3 className="text-h3 mb-4">Early Intervention</h3>
               <p className="text-lg text-muted-foreground font-normal leading-relaxed">
                 Timely and accurate detection enables crucial early intervention, improving patient outcomes.
               </p>
@@ -201,7 +201,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
       {/* Customers Section */}
       <section id="customers" className="py-24" style={{ backgroundColor: '#F8F8F8' }}>
         <div className="max-w-5xl mx-auto text-center px-4 lg:px-8">
-          <h3 className="text-4xl md:text-5xl font-normal mb-16 tracking-tight">Trusted by Leading Organizations</h3>
+          <h3 className="text-h3 mb-16">Trusted by Leading Organizations</h3>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 items-center justify-items-center">
             <div className="flex items-center justify-center h-24">
               <img 
@@ -232,7 +232,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
       <section id="contact" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12">
-            <h3 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Get in Touch</h3>
+            <h3 className="text-h3 mb-6">Get in Touch</h3>
             <p className="text-lg text-muted-foreground font-normal max-w-2xl mx-auto">
               Ready to revolutionize your approach to antimicrobial resistance detection? Let's discuss how AntiPath-ML can transform your diagnostic capabilities.
             </p>
@@ -243,7 +243,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
                 <CheckCircle2 className="w-6 h-6 text-primary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-medium mb-2">Schedule a Demo</h3>
+              <h3 className="text-h3 mb-2">Schedule a Demo</h3>
               <p className="text-sm text-muted-foreground">See AntiPath-ML in action</p>
             </Card>
             
@@ -251,7 +251,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-4">
                 <Target className="w-6 h-6 text-secondary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-medium mb-2">Partner With Us</h3>
+              <h3 className="text-h3 mb-2">Partner With Us</h3>
               <p className="text-sm text-muted-foreground">Collaborate on research</p>
             </Card>
             
@@ -259,7 +259,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-4">
                 <Gauge className="w-6 h-6 text-accent" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-medium mb-2">Request Access</h3>
+              <h3 className="text-h3 mb-2">Request Access</h3>
               <p className="text-sm text-muted-foreground">Join early adopters</p>
             </Card>
           </div>
