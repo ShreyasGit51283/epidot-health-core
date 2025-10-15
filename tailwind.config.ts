@@ -16,6 +16,11 @@ export default {
       fontFamily: {
         sans: ['Inter', 'system-ui', '-apple-system', 'sans-serif'],
       },
+      fontSize: {
+        // Custom H1 size - use as 'text-h1'
+        'h1': ['3.5rem', { lineHeight: '1.2', fontWeight: '400', letterSpacing: '-0.02em' }],
+        // You can add more: 'h2', 'h3', etc.
+      },
       colors: {
         border: "hsl(var(--border))",
         input: "hsl(var(--input))",
