@@ -139,7 +139,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-6">
                 <Target className="w-6 h-6 text-primary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-3xl font-normal mb-4 tracking-tight">Precision Detection</h3>
+              <h3 className="text-h3 mb-4">Precision Detection</h3>
               <p className="text-lg text-muted-foreground font-normal leading-relaxed">
                 Our platform utilizes genomic data and adaptive machine learning to detect antimicrobial resistance.
               </p>
@@ -180,7 +180,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-6">
                 <Zap className="w-6 h-6 text-secondary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-3xl font-normal mb-4 tracking-tight">Real-Time Results</h3>
+              <h3 className="text-h3 mb-4">Real-Time Results</h3>
               <p className="text-lg text-muted-foreground font-normal leading-relaxed">
                 Get faster, more scalable, and more affordable results in real time, surpassing conventional methods.
               </p>
@@ -212,7 +212,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-6">
                 <IndianRupee className="w-6 h-6 text-accent" strokeWidth={1.5} />
               </div>
-              <h3 className="text-3xl font-normal mb-4 tracking-tight">Early Intervention</h3>
+              <h3 className="text-h3 mb-4">Early Intervention</h3>
               <p className="text-lg text-muted-foreground font-normal leading-relaxed">
                 Timely and accurate detection enables crucial early intervention, improving patient outcomes.
               </p>
@@ -272,7 +272,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
                 <CheckCircle2 className="w-6 h-6 text-primary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-medium mb-2">Schedule a Demo</h3>
+              <h3 className="text-h3 mb-2">Schedule a Demo</h3>
               <p className="text-sm text-muted-foreground">See AntiPath-ML in action</p>
             </Card>
 
@@ -280,7 +280,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-4">
                 <Target className="w-6 h-6 text-secondary" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-medium mb-2">Partner With Us</h3>
+              <h3 className="text-h3 mb-2">Partner With Us</h3>
               <p className="text-sm text-muted-foreground">Collaborate on research</p>
             </Card>
 
@@ -288,7 +288,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-4">
                 <Gauge className="w-6 h-6 text-accent" strokeWidth={1.5} />
               </div>
-              <h3 className="text-lg font-medium mb-2">Request Access</h3>
+              <h3 className="text-h3 mb-2">Request Access</h3>
               <p className="text-sm text-muted-foreground">Join early adopters</p>
             </Card>
           </div>
