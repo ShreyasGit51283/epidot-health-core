@@ -20,10 +20,10 @@ export const Header = ({ onContactClick }: HeaderProps) => {
         <div className="flex items-center justify-between h-16 lg:h-20">
           {/* Logo */}
           <Link to="/" className="flex items-center group">
-            <img 
-              src={epidoteLogo} 
-              alt="Epidote Healthcare" 
-              className="h-10 w-auto transition-transform group-hover:scale-105"
+            <img
+              src={epidoteLogo}
+              alt="Epidote Healthcare"
+              className="h-16 w-auto transition-transform group-hover:scale-105"
             />
           </Link>
 
@@ -35,7 +35,7 @@ export const Header = ({ onContactClick }: HeaderProps) => {
             <Link to="/about" className="text-foreground/80 hover:text-foreground transition-colors font-normal">
               About us
             </Link>
-            <Button 
+            <Button
               onClick={onContactClick}
               variant="outline"
               className="rounded-full border-border hover:gradient-primary hover:text-white hover:border-transparent transition-all font-normal hover:shadow-medium"
@@ -58,13 +58,21 @@ export const Header = ({ onContactClick }: HeaderProps) => {
         {isMenuOpen && (
           <div className="md:hidden py-4 border-t border-border animate-fade-in">
             <div className="flex flex-col space-y-2">
-              <Link to="/products" onClick={() => setIsMenuOpen(false)} className="px-4 py-2 text-foreground/80 hover:text-foreground transition-colors">
+              <Link
+                to="/products"
+                onClick={() => setIsMenuOpen(false)}
+                className="px-4 py-2 text-foreground/80 hover:text-foreground transition-colors"
+              >
                 Products
               </Link>
-              <Link to="/about" onClick={() => setIsMenuOpen(false)} className="px-4 py-2 text-foreground/80 hover:text-foreground transition-colors">
+              <Link
+                to="/about"
+                onClick={() => setIsMenuOpen(false)}
+                className="px-4 py-2 text-foreground/80 hover:text-foreground transition-colors"
+              >
                 About us
               </Link>
-              <Button 
+              <Button
                 onClick={() => {
                   onContactClick();
                   setIsMenuOpen(false);
