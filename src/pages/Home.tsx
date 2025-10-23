@@ -97,7 +97,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-20">
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
               <span className="text-secondary font-medium flex items-center gap-2">
                 <Rocket className="w-4 h-4" strokeWidth={2} />
                 Rapid
