@@ -31,7 +31,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
       <section id="hero" className="py-24 lg:py-32 container mx-auto px-4 lg:px-8">
         <div className="max-w-5xl mx-auto text-center animate-fade-in-up">
           <h1 className="text-h1 mb-6 text-foreground">
-            Cutting edge Genomics for {" "}
+            Cutting edge Genomics for{" "}
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
               saving lives
             </span>
@@ -88,9 +88,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
-          <h2 className="text-h2 mb-6">
-            AntiPath-ML, a self learning antibiotic resistance screening platform
-          </h2>
+          <h2 className="text-h2 mb-6">AntiPath-ML, a self learning antibiotic resistance screening platform</h2>
           <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-12">
             AntiPath-ML achieves high accuracy across all major AMR pathogens. It learns continuously, improving with
             every dataset. Reports are generated instantly. Costs are reduced significantly. Our goal is simple: better
@@ -99,13 +97,13 @@ export const Home = ({ onContactClick }: HomeProps) => {
           </p>
 
           <div className="flex flex-wrap justify-center gap-4 mb-20">
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
               <span className="text-primary font-medium flex items-center gap-2">
                 <Rocket className="w-4 h-4" strokeWidth={2} />
                 Rapid
               </span>
             </div>
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-primary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
               <span className="text-primary font-medium flex items-center gap-2">
                 <TrendingUp className="w-4 h-4" strokeWidth={2} />
                 Scalable
@@ -117,13 +115,13 @@ export const Home = ({ onContactClick }: HomeProps) => {
                 Accurate
               </span>
             </div>
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-accent/10 to-accent/5 border border-accent/20 shadow-soft hover:shadow-medium transition-all">
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
               <span className="text-accent font-medium flex items-center gap-2">
                 <Package className="w-4 h-4" strokeWidth={2} />
                 Portable
               </span>
             </div>
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-secondary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
               <span className="text-primary font-medium flex items-center gap-2">
                 <IndianRupee className="w-4 h-4" strokeWidth={2} />
                 Affordable
