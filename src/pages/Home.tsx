@@ -31,9 +31,9 @@ export const Home = ({ onContactClick }: HomeProps) => {
       <section id="hero" className="py-24 lg:py-32 container mx-auto px-4 lg:px-8">
         <div className="max-w-5xl mx-auto text-center animate-fade-in-up">
           <h1 className="text-h1 mb-6 text-foreground">
-            Precision Genomics for a{" "}
+            Cutting edge Genomics for {" "}
             <span className="bg-gradient-to-r from-primary via-secondary to-accent bg-clip-text text-transparent">
-              Healthier Future
+              saving lives
             </span>
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground mb-12 max-w-3xl mx-auto font-normal leading-relaxed">
