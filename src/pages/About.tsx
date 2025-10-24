@@ -147,7 +147,7 @@ export const About = () => {
       <section id="founders" className="py-24 bg-muted/30">
         <div className="container mx-auto px-4 lg:px-8">
           <div className="text-center mb-20">
-            <h2 className="text-h2 mb-6">Scientific Leadership</h2>
+            <h2 className="text-h2 mb-6">Founders</h2>
           </div>
 
           <div className="grid md:grid-cols-2 gap-8 max-w-4xl mx-auto">
@@ -155,7 +155,7 @@ export const About = () => {
               <div className="aspect-square bg-gradient-to-br from-primary/10 to-secondary/10"></div>
               <div className="p-8">
                 <h4 className="text-lg font-medium mb-2">Dr. Ashwin Kelkar</h4>
-                <p className="text-sm text-primary mb-3 font-medium">Machine Learning Lead</p>
+                <p className="text-sm text-primary mb-3 font-medium">CTO</p>
                 <p className="text-sm text-muted-foreground font-normal leading-relaxed">
                   Research at Penn State and Wellcome Trust Cambridge. Specializes in ML algorithms for genomic data.
                 </p>
@@ -166,7 +166,7 @@ export const About = () => {
               <div className="aspect-square bg-gradient-to-br from-secondary/10 to-accent/10"></div>
               <div className="p-8">
                 <h4 className="text-lg font-medium mb-2">Dr. Sanjeev Galande</h4>
-                <p className="text-sm text-secondary mb-3 font-medium">Genomics Lead</p>
+                <p className="text-sm text-secondary mb-3 font-medium">Board Member</p>
                 <p className="text-sm text-muted-foreground font-normal leading-relaxed">
                   Professor and Dean, Shiv Nadar University; former Fellow at LBNL, Berkeley. Expert in next-generation
                   genomic pipelines.

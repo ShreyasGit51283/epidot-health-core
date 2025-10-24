@@ -194,20 +194,6 @@ export const Home = ({ onContactClick }: HomeProps) => {
                 className="max-h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
               />
             </div>
-            <div className="flex items-center justify-center h-24">
-              <img
-                src={whoLogo}
-                alt="World Health Organization"
-                className="max-h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-            </div>
-            <div className="flex items-center justify-center h-24">
-              <img
-                src={cdcLogo}
-                alt="Centers for Disease Control and Prevention"
-                className="max-h-20 w-auto object-contain opacity-70 hover:opacity-100 transition-opacity"
-              />
-            </div>
           </div>
         </div>
       </section>
