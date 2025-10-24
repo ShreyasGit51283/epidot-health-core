@@ -165,6 +165,24 @@ export const Home = ({ onContactClick }: HomeProps) => {
               </Card>
             </div>
           </div>
+
+          {/* Vaccine Genomics */}
+          <div className="grid lg:grid-cols-2 gap-16 items-center">
+            <div>
+              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-6">
+                <Gauge className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              </div>
+              <h3 className="text-h3 mb-4">Vaccine Genomics</h3>
+              <p className="text-lg text-muted-foreground font-normal leading-relaxed">
+                Advanced genomic analysis ensures vaccine safety and efficacy through comprehensive quality control and monitoring.
+              </p>
+            </div>
+            <div className="relative">
+              <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3] bg-muted flex items-center justify-center">
+                <p className="text-muted-foreground">Vaccine Genomics Image Placeholder</p>
+              </Card>
+            </div>
+          </div>
         </div>
       </section>
 
