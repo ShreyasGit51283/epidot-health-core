@@ -217,20 +217,9 @@ export const Home = ({ onContactClick }: HomeProps) => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="mb-12">
             <h3 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Get in Touch</h3>
-            <p className="text-lg text-muted-foreground font-normal max-w-2xl mx-auto">
-              Ready to revolutionize your approach to antimicrobial resistance detection? Let's discuss how AntiPath-ML
-              can transform your diagnostic capabilities.
+            <p className="text-lg text-muted-foreground font-normal max-w-2xl mx-auto mb-8">
+              Reach out for research opportunities and for a commercial test of our platform
             </p>
-          </div>
-
-          <Card className="p-8 shadow-soft border border-border/50 hover:shadow-medium transition-all max-w-2xl mx-auto">
-            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-4 mx-auto">
-              <Target className="w-6 h-6 text-secondary" strokeWidth={1.5} />
-            </div>
-            <h3 className="text-h3 mb-2">
-              Reach out to us for research opportunities orfor commercial test of our platform
-            </h3>
-            {/*<p className="text-sm text-muted-foreground mb-6"> For reasearch and dvelpment opportunities or commercial test of our platform </p>*/}
             <Button
               size="lg"
               className="gradient-primary text-white shadow-medium hover:shadow-large transition-all rounded-full px-8 font-medium"
@@ -239,7 +228,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               Get in Touch
               <ArrowRight className="ml-2" size={20} />
             </Button>
-          </Card>
+          </div>
         </div>
       </section>
     </div>
