@@ -59,7 +59,6 @@ export const Home = ({ onContactClick }: HomeProps) => {
         </div>
       </section>
 
-
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
         <div className="text-center mb-16">
@@ -128,7 +127,6 @@ export const Home = ({ onContactClick }: HomeProps) => {
             </div>
           </div>
 
-
           {/* Real-Time Results */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -147,7 +145,6 @@ export const Home = ({ onContactClick }: HomeProps) => {
             </div>
           </div>
 
-
           {/* Early Intervention */}
           <div className="grid lg:grid-cols-2 gap-16 items-center">
             <div>
@@ -165,7 +162,6 @@ export const Home = ({ onContactClick }: HomeProps) => {
               </Card>
             </div>
           </div>
-
         </div>
       </section>
 
@@ -175,10 +171,11 @@ export const Home = ({ onContactClick }: HomeProps) => {
           <div className="mb-12">
             <h3 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Vaccine Genomics</h3>
             <p className="text-lg text-muted-foreground font-normal max-w-2xl mx-auto">
-              Advanced genomic analysis ensures vaccine safety and efficacy through comprehensive quality control and monitoring.
+              Advanced genomic analysis ensures vaccine safety and efficacy through comprehensive quality control and
+              monitoring.
             </p>
           </div>
-          
+
           <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-video max-w-3xl mx-auto bg-muted flex items-center justify-center">
             <p className="text-muted-foreground">Vaccine Genomics Image Placeholder</p>
           </Card>
@@ -230,8 +227,10 @@ export const Home = ({ onContactClick }: HomeProps) => {
             <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-4 mx-auto">
               <Target className="w-6 h-6 text-secondary" strokeWidth={1.5} />
             </div>
-            <h3 className="text-h3 mb-2">Partner With Us</h3>
-            <p className="text-sm text-muted-foreground mb-6">Collaborate on research</p>
+            <h3 className="text-h3 mb-2">
+              Reach out to us for research opportunities orfor commercial test of our platform
+            </h3>
+            {/*<p className="text-sm text-muted-foreground mb-6"> For reasearch and dvelpment opportunities or commercial test of our platform </p>*/}
             <Button
               size="lg"
               className="gradient-primary text-white shadow-medium hover:shadow-large transition-all rounded-full px-8 font-medium"
