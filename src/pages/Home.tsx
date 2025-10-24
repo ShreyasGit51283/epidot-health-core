@@ -166,23 +166,22 @@ export const Home = ({ onContactClick }: HomeProps) => {
             </div>
           </div>
 
-          {/* Vaccine Genomics */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-6">
-                <Gauge className="w-6 h-6 text-primary" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-h3 mb-4">Vaccine Genomics</h3>
-              <p className="text-lg text-muted-foreground font-normal leading-relaxed">
-                Advanced genomic analysis ensures vaccine safety and efficacy through comprehensive quality control and monitoring.
-              </p>
-            </div>
-            <div className="relative">
-              <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3] bg-muted flex items-center justify-center">
-                <p className="text-muted-foreground">Vaccine Genomics Image Placeholder</p>
-              </Card>
-            </div>
+        </div>
+      </section>
+
+      {/* Vaccine Genomics Section */}
+      <section className="py-24 container mx-auto px-4 lg:px-8">
+        <div className="max-w-4xl mx-auto text-center">
+          <div className="mb-12">
+            <h3 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Vaccine Genomics</h3>
+            <p className="text-lg text-muted-foreground font-normal max-w-2xl mx-auto">
+              Advanced genomic analysis ensures vaccine safety and efficacy through comprehensive quality control and monitoring.
+            </p>
           </div>
+          
+          <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-video max-w-3xl mx-auto bg-muted flex items-center justify-center">
+            <p className="text-muted-foreground">Vaccine Genomics Image Placeholder</p>
+          </Card>
         </div>
       </section>
 
