@@ -226,40 +226,21 @@ export const Home = ({ onContactClick }: HomeProps) => {
             </p>
           </div>
 
-          <div className="grid md:grid-cols-3 gap-8 mb-12">
-            <Card className="p-8 shadow-soft border border-border/50 hover:shadow-medium transition-all">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-4">
-                <CheckCircle2 className="w-6 h-6 text-primary" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-h3 mb-2">Schedule a Demo</h3>
-              <p className="text-sm text-muted-foreground">See AntiPath-ML in action</p>
-            </Card>
-
-            <Card className="p-8 shadow-soft border border-border/50 hover:shadow-medium transition-all">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-4">
-                <Target className="w-6 h-6 text-secondary" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-h3 mb-2">Partner With Us</h3>
-              <p className="text-sm text-muted-foreground">Collaborate on research</p>
-            </Card>
-
-            <Card className="p-8 shadow-soft border border-border/50 hover:shadow-medium transition-all">
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-4">
-                <Gauge className="w-6 h-6 text-accent" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-h3 mb-2">Request Access</h3>
-              <p className="text-sm text-muted-foreground">Join early adopters</p>
-            </Card>
-          </div>
-
-          <Button
-            size="lg"
-            className="gradient-primary text-white shadow-medium hover:shadow-large transition-all rounded-full px-8 font-medium"
-            onClick={onContactClick}
-          >
-            Get in Touch
-            <ArrowRight className="ml-2" size={20} />
-          </Button>
+          <Card className="p-8 shadow-soft border border-border/50 hover:shadow-medium transition-all max-w-2xl mx-auto">
+            <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-4 mx-auto">
+              <Target className="w-6 h-6 text-secondary" strokeWidth={1.5} />
+            </div>
+            <h3 className="text-h3 mb-2">Partner With Us</h3>
+            <p className="text-sm text-muted-foreground mb-6">Collaborate on research</p>
+            <Button
+              size="lg"
+              className="gradient-primary text-white shadow-medium hover:shadow-large transition-all rounded-full px-8 font-medium"
+              onClick={onContactClick}
+            >
+              Get in Touch
+              <ArrowRight className="ml-2" size={20} />
+            </Button>
+          </Card>
         </div>
       </section>
     </div>
