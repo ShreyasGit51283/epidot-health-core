@@ -165,6 +165,47 @@ export const About = () => {
           </Card>
         </div>
       </section>
+
+      {/* Success Stories */}
+      <section id="success-stories" className="py-24 bg-muted/30">
+        <div className="container mx-auto px-4 lg:px-8">
+          <div className="text-center mb-20">
+            <h2 className="text-h2 mb-6">Success Stories</h2>
+          </div>
+
+          <div className="grid md:grid-cols-3 gap-8 max-w-6xl mx-auto">
+            <Card className="p-8 shadow-soft hover:shadow-medium transition-all border border-border/50 bg-card flex flex-col">
+              <p className="text-base text-muted-foreground font-normal leading-relaxed mb-auto">
+                "AntiPath-ML has significantly accelerated our pathogen identification process, enabling faster patient care decisions in critical situations."
+              </p>
+              <div className="flex items-center gap-3 mt-8 pt-6 border-t border-border/50">
+                <img src="/src/assets/cdc-logo.png" alt="CDC" className="h-10 w-10 object-contain rounded-full bg-white p-1" />
+                <span className="text-sm font-medium">CDC</span>
+              </div>
+            </Card>
+
+            <Card className="p-8 shadow-soft hover:shadow-medium transition-all border border-border/50 bg-card flex flex-col">
+              <p className="text-base text-muted-foreground font-normal leading-relaxed mb-auto">
+                "The precision and speed of AntiPath-ML's antimicrobial resistance detection has transformed our clinical workflows and improved patient outcomes."
+              </p>
+              <div className="flex items-center gap-3 mt-8 pt-6 border-t border-border/50">
+                <img src="/src/assets/who-logo.png" alt="WHO" className="h-10 w-10 object-contain rounded-full bg-white p-1" />
+                <span className="text-sm font-medium">WHO</span>
+              </div>
+            </Card>
+
+            <Card className="p-8 shadow-soft hover:shadow-medium transition-all border border-border/50 bg-card flex flex-col">
+              <p className="text-base text-muted-foreground font-normal leading-relaxed mb-auto">
+                "Integrating AntiPath-ML into our diagnostic pipeline has enhanced our research capabilities and accelerated our vaccine development timelines."
+              </p>
+              <div className="flex items-center gap-3 mt-8 pt-6 border-t border-border/50">
+                <img src="/src/assets/serum-institute-logo.png" alt="Serum Institute" className="h-10 w-10 object-contain rounded-full bg-white p-1" />
+                <span className="text-sm font-medium">Serum Institute</span>
+              </div>
+            </Card>
+          </div>
+        </div>
+      </section>
     </div>
   );
 };
