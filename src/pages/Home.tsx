@@ -104,7 +104,7 @@ export const Home = ({ onContactClick }: HomeProps) => {
               </span>
             </div>
             <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-primary font-medium flex items-center gap-2">
+              <span className="text-secondary font-medium flex items-center gap-2">
                 <TrendingUp className="w-4 h-4" strokeWidth={2} />
                 Scalable
               </span>
@@ -115,14 +115,14 @@ export const Home = ({ onContactClick }: HomeProps) => {
                 Accurate
               </span>
             </div>
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-accent/10 to-accent/5 border border-accent/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-accent font-medium flex items-center gap-2">
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
+              <span className="text-secondary font-medium flex items-center gap-2">
                 <Package className="w-4 h-4" strokeWidth={2} />
                 Portable
               </span>
             </div>
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-primary/10 to-secondary/5 border border-primary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-primary font-medium flex items-center gap-2">
+            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
+              <span className="text-secondary font-medium flex items-center gap-2">
                 <IndianRupee className="w-4 h-4" strokeWidth={2} />
                 Affordable
               </span>
