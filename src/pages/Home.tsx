@@ -12,6 +12,7 @@ import {
 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Card } from "@/components/ui/card";
+import { Tabs, TabsList, TabsTrigger, TabsContent } from "@/components/ui/tabs";
 import heroPoster from "@/assets/hero-video-poster.jpg";
 import precisionDetection from "@/assets/precision-detection.jpg";
 import realtimeResults from "@/assets/realtime-results.jpg";
@@ -61,125 +62,133 @@ export const Home = ({ onContactClick }: HomeProps) => {
 
       {/* Product Highlights */}
       <section id="product" className="py-24 container mx-auto px-4 lg:px-8">
-        <div className="text-center mb-16">
-          <h2 className="text-h2 mb-6">AntiPath-ML, a self learning antibiotic resistance screening platform</h2>
-          <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-12">
-            AntiPath-ML achieves high accuracy across all major AMR pathogens. It learns continuously, improving with
-            every dataset. Reports are generated instantly. Costs are reduced significantly. Our goal is simple: better
-            data, faster decisions. Our systems enable large-scale screening and vaccine integrity testing, optimized
-            for use across low- and middle-income, high-burden regions, where diagnostic access is most critical.
-          </p>
+        <Tabs defaultValue="antipath" className="w-full">
+          <TabsList className="grid w-full max-w-md mx-auto grid-cols-2 mb-16">
+            <TabsTrigger value="antipath">AntiPath-ML</TabsTrigger>
+            <TabsTrigger value="vaccine">Vaccine Genomics</TabsTrigger>
+          </TabsList>
 
-          <div className="flex flex-wrap justify-center gap-4 mb-20">
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-secondary font-medium flex items-center gap-2">
-                <Rocket className="w-4 h-4" strokeWidth={2} />
-                Rapid
-              </span>
-            </div>
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-secondary font-medium flex items-center gap-2">
-                <TrendingUp className="w-4 h-4" strokeWidth={2} />
-                Scalable
-              </span>
-            </div>
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-secondary font-medium flex items-center gap-2">
-                <Crosshair className="w-4 h-4" strokeWidth={2} />
-                Accurate
-              </span>
-            </div>
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-secondary font-medium flex items-center gap-2">
-                <Package className="w-4 h-4" strokeWidth={2} />
-                Portable
-              </span>
-            </div>
-            <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
-              <span className="text-secondary font-medium flex items-center gap-2">
-                <IndianRupee className="w-4 h-4" strokeWidth={2} />
-                Affordable
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div className="max-w-7xl mx-auto space-y-32">
-          {/* Precision Detection */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-6">
-                <Target className="w-6 h-6 text-primary" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-h3 mb-4">Precision Detection</h3>
-              <p className="text-lg text-muted-foreground font-normal leading-relaxed">
-                Our platform utilizes genomic data and adaptive machine learning to detect antimicrobial resistance.
+          <TabsContent value="antipath">
+            <div className="text-center mb-16">
+              <h2 className="text-h2 mb-6">AntiPath-ML, a self learning antibiotic resistance screening platform</h2>
+              <p className="text-lg text-muted-foreground font-normal max-w-3xl mx-auto mb-12">
+                AntiPath-ML achieves high accuracy across all major AMR pathogens. It learns continuously, improving with
+                every dataset. Reports are generated instantly. Costs are reduced significantly. Our goal is simple: better
+                data, faster decisions. Our systems enable large-scale screening and vaccine integrity testing, optimized
+                for use across low- and middle-income, high-burden regions, where diagnostic access is most critical.
               </p>
+
+              <div className="flex flex-wrap justify-center gap-4 mb-20">
+                <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
+                  <span className="text-secondary font-medium flex items-center gap-2">
+                    <Rocket className="w-4 h-4" strokeWidth={2} />
+                    Rapid
+                  </span>
+                </div>
+                <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
+                  <span className="text-secondary font-medium flex items-center gap-2">
+                    <TrendingUp className="w-4 h-4" strokeWidth={2} />
+                    Scalable
+                  </span>
+                </div>
+                <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
+                  <span className="text-secondary font-medium flex items-center gap-2">
+                    <Crosshair className="w-4 h-4" strokeWidth={2} />
+                    Accurate
+                  </span>
+                </div>
+                <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
+                  <span className="text-secondary font-medium flex items-center gap-2">
+                    <Package className="w-4 h-4" strokeWidth={2} />
+                    Portable
+                  </span>
+                </div>
+                <div className="px-6 py-3 rounded-full bg-gradient-to-r from-secondary/10 to-secondary/5 border border-secondary/20 shadow-soft hover:shadow-medium transition-all">
+                  <span className="text-secondary font-medium flex items-center gap-2">
+                    <IndianRupee className="w-4 h-4" strokeWidth={2} />
+                    Affordable
+                  </span>
+                </div>
+              </div>
             </div>
-            <div className="relative">
-              <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
-                <img
-                  src={precisionDetection}
-                  alt="Precision Detection Platform"
-                  className="w-full h-full object-cover"
-                />
+
+            <div className="max-w-7xl mx-auto space-y-32">
+              {/* Precision Detection */}
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-6">
+                    <Target className="w-6 h-6 text-primary" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="text-h3 mb-4">Precision Detection</h3>
+                  <p className="text-lg text-muted-foreground font-normal leading-relaxed">
+                    Our platform utilizes genomic data and adaptive machine learning to detect antimicrobial resistance.
+                  </p>
+                </div>
+                <div className="relative">
+                  <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
+                    <img
+                      src={precisionDetection}
+                      alt="Precision Detection Platform"
+                      className="w-full h-full object-cover"
+                    />
+                  </Card>
+                </div>
+              </div>
+
+              {/* Real-Time Results */}
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-6">
+                    <Zap className="w-6 h-6 text-secondary" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="text-h3 mb-4">Real-Time Results</h3>
+                  <p className="text-lg text-muted-foreground font-normal leading-relaxed">
+                    Get faster, more scalable, and more affordable results in real time, surpassing conventional methods.
+                  </p>
+                </div>
+                <div className="relative">
+                  <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
+                    <img src={realtimeResults} alt="Real-Time Analytics" className="w-full h-full object-cover" />
+                  </Card>
+                </div>
+              </div>
+
+              {/* Early Intervention */}
+              <div className="grid lg:grid-cols-2 gap-16 items-center">
+                <div>
+                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-6">
+                    <IndianRupee className="w-6 h-6 text-accent" strokeWidth={1.5} />
+                  </div>
+                  <h3 className="text-h3 mb-4">Early Intervention</h3>
+                  <p className="text-lg text-muted-foreground font-normal leading-relaxed">
+                    Timely and accurate detection enables crucial early intervention, improving patient outcomes.
+                  </p>
+                </div>
+                <div className="relative">
+                  <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
+                    <img src={earlyIntervention} alt="Early Detection System" className="w-full h-full object-cover" />
+                  </Card>
+                </div>
+              </div>
+            </div>
+          </TabsContent>
+
+          <TabsContent value="vaccine">
+            <div className="max-w-4xl mx-auto text-center">
+              <div className="mb-12">
+                <h3 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Vaccine Genomics</h3>
+                <p className="text-lg text-muted-foreground font-normal max-w-2xl mx-auto">
+                  Advanced genomic analysis ensures vaccine safety and efficacy through comprehensive quality control and
+                  monitoring.
+                </p>
+              </div>
+
+              <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-video max-w-3xl mx-auto bg-muted flex items-center justify-center">
+                <p className="text-muted-foreground">Vaccine Genomics Image Placeholder</p>
               </Card>
             </div>
-          </div>
-
-          {/* Real-Time Results */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-6">
-                <Zap className="w-6 h-6 text-secondary" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-h3 mb-4">Real-Time Results</h3>
-              <p className="text-lg text-muted-foreground font-normal leading-relaxed">
-                Get faster, more scalable, and more affordable results in real time, surpassing conventional methods.
-              </p>
-            </div>
-            <div className="relative">
-              <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
-                <img src={realtimeResults} alt="Real-Time Analytics" className="w-full h-full object-cover" />
-              </Card>
-            </div>
-          </div>
-
-          {/* Early Intervention */}
-          <div className="grid lg:grid-cols-2 gap-16 items-center">
-            <div>
-              <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-6">
-                <IndianRupee className="w-6 h-6 text-accent" strokeWidth={1.5} />
-              </div>
-              <h3 className="text-h3 mb-4">Early Intervention</h3>
-              <p className="text-lg text-muted-foreground font-normal leading-relaxed">
-                Timely and accurate detection enables crucial early intervention, improving patient outcomes.
-              </p>
-            </div>
-            <div className="relative">
-              <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
-                <img src={earlyIntervention} alt="Early Detection System" className="w-full h-full object-cover" />
-              </Card>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Vaccine Genomics Section */}
-      <section className="py-24 container mx-auto px-4 lg:px-8">
-        <div className="max-w-4xl mx-auto text-center">
-          <div className="mb-12">
-            <h3 className="text-4xl md:text-5xl font-normal mb-6 tracking-tight">Vaccine Genomics</h3>
-            <p className="text-lg text-muted-foreground font-normal max-w-2xl mx-auto">
-              Advanced genomic analysis ensures vaccine safety and efficacy through comprehensive quality control and
-              monitoring.
-            </p>
-          </div>
-
-          <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-video max-w-3xl mx-auto bg-muted flex items-center justify-center">
-            <p className="text-muted-foreground">Vaccine Genomics Image Placeholder</p>
-          </Card>
-        </div>
+          </TabsContent>
+        </Tabs>
       </section>
 
       {/* Customers Section */}
