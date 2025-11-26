@@ -112,64 +112,45 @@ export const Home = ({ onContactClick }: HomeProps) => {
               </div>
             </div>
 
-            <div className="max-w-7xl mx-auto space-y-32">
+            <div className="grid md:grid-cols-3 gap-6 max-w-7xl mx-auto">
               {/* Precision Detection */}
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
-                <div>
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-primary/10 mb-6">
-                    <Target className="w-6 h-6 text-primary" strokeWidth={1.5} />
+              <Card className="p-8 bg-muted/30 border-border/50 hover:shadow-medium transition-shadow">
+                <div className="flex flex-col items-start">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-primary/10 mb-6">
+                    <Target className="w-7 h-7 text-primary" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-h3 mb-4">Precision Detection</h3>
-                  <p className="text-lg text-muted-foreground font-normal leading-relaxed">
+                  <h3 className="text-2xl font-medium mb-3">Precision Detection</h3>
+                  <p className="text-muted-foreground leading-relaxed">
                     Our platform utilizes genomic data and adaptive machine learning to detect antimicrobial resistance.
                   </p>
                 </div>
-                <div className="relative">
-                  <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
-                    <img
-                      src={precisionDetection}
-                      alt="Precision Detection Platform"
-                      className="w-full h-full object-cover"
-                    />
-                  </Card>
-                </div>
-              </div>
+              </Card>
 
               {/* Real-Time Results */}
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
-                <div>
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-secondary/10 mb-6">
-                    <Zap className="w-6 h-6 text-secondary" strokeWidth={1.5} />
+              <Card className="p-8 bg-muted/30 border-border/50 hover:shadow-medium transition-shadow">
+                <div className="flex flex-col items-start">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-secondary/10 mb-6">
+                    <Zap className="w-7 h-7 text-secondary" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-h3 mb-4">Real-Time Results</h3>
-                  <p className="text-lg text-muted-foreground font-normal leading-relaxed">
+                  <h3 className="text-2xl font-medium mb-3">Real-Time Results</h3>
+                  <p className="text-muted-foreground leading-relaxed">
                     Get faster, more scalable, and more affordable results in real time, surpassing conventional methods.
                   </p>
                 </div>
-                <div className="relative">
-                  <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
-                    <img src={realtimeResults} alt="Real-Time Analytics" className="w-full h-full object-cover" />
-                  </Card>
-                </div>
-              </div>
+              </Card>
 
               {/* Early Intervention */}
-              <div className="grid lg:grid-cols-2 gap-16 items-center">
-                <div>
-                  <div className="inline-flex items-center justify-center w-12 h-12 rounded-full bg-accent/10 mb-6">
-                    <IndianRupee className="w-6 h-6 text-accent" strokeWidth={1.5} />
+              <Card className="p-8 bg-muted/30 border-border/50 hover:shadow-medium transition-shadow">
+                <div className="flex flex-col items-start">
+                  <div className="inline-flex items-center justify-center w-14 h-14 rounded-lg bg-accent/10 mb-6">
+                    <Gauge className="w-7 h-7 text-accent" strokeWidth={1.5} />
                   </div>
-                  <h3 className="text-h3 mb-4">Early Intervention</h3>
-                  <p className="text-lg text-muted-foreground font-normal leading-relaxed">
+                  <h3 className="text-2xl font-medium mb-3">Early Intervention</h3>
+                  <p className="text-muted-foreground leading-relaxed">
                     Timely and accurate detection enables crucial early intervention, improving patient outcomes.
                   </p>
                 </div>
-                <div className="relative">
-                  <Card className="overflow-hidden shadow-soft border border-border/50 rounded-3xl aspect-[4/3]">
-                    <img src={earlyIntervention} alt="Early Detection System" className="w-full h-full object-cover" />
-                  </Card>
-                </div>
-              </div>
+              </Card>
             </div>
           </TabsContent>
 
